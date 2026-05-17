@@ -51,11 +51,42 @@ const InquiryForm = ({ isOpen, onClose }) => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (validate()) {
-      setSubmitted(true);
+    if (!validate()) return;
+
+    const form = new FormData();
+
+    form.append('access_key', 'c2c47f5d-db28-4d20-b758-9f864ce4c14b');
+    form.append('subject', 'Odisha Trip Inquiry');
+    form.append('from_name', 'Odisha India Trip');
+
+    form.append('name', formData.name);
+    form.append('phone', formData.phone);
+    form.append('email', formData.email);
+    form.append('travelers', formData.travelers);
+    form.append('message', formData.message);
+
+    try {
+      const response = await fetch(
+        'https://api.web3forms.com/submit',
+        {
+          method: 'POST',
+          body: form,
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        alert('There was an issue submitting the form.');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('An error occurred while submitting the form.');
     }
   };
 
@@ -150,125 +181,124 @@ const InquiryForm = ({ isOpen, onClose }) => {
           <form onSubmit={handleSubmit} className="p-6 space-y-4">
             <div className='flex gap-2'>
               {/* Name */}
-            <div>
-              <label className="block text-sm font-medium text-navy-700 mb-1.5">
-                Full Name
-              </label>
+              <div>
+                <label className="block text-sm font-medium text-navy-700 mb-1.5">
+                  Full Name
+                </label>
 
-              <div className="relative">
-                <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-300" />
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-300" />
 
-                <input
-                  type="text"
-                  value={formData.name}
-                  onChange={(e) => handleChange('name', e.target.value)}
-                  placeholder="Enter your full name"
-                  className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 placeholder:text-navy-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all ${
-                    errors.name ? 'border-red-400' : 'border-slate-200'
-                  }`}
-                />
+                  <input
+                    type="text"
+                    value={formData.name}
+                    onChange={(e) => handleChange('name', e.target.value)}
+                    placeholder="Enter your full name"
+                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 placeholder:text-navy-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all ${
+                      errors.name ? 'border-red-400' : 'border-slate-200'
+                    }`}
+                  />
+                </div>
+
+                {errors.name && (
+                  <p className="mt-1 text-xs text-red-500">
+                    {errors.name}
+                  </p>
+                )}
               </div>
 
-              {errors.name && (
-                <p className="mt-1 text-xs text-red-500">
-                  {errors.name}
-                </p>
-              )}
-            </div>
+              {/* Phone */}
+              <div>
+                <label className="block text-sm font-medium text-navy-700 mb-1.5">
+                  Phone Number
+                </label>
 
-            {/* Phone */}
-            <div>
-              <label className="block text-sm font-medium text-navy-700 mb-1.5">
-                Phone Number
-              </label>
+                <div className="relative">
+                  <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-300" />
 
-              <div className="relative">
-                <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-300" />
+                  <input
+                    type="tel"
+                    value={formData.phone}
+                    onChange={(e) => handleChange('phone', e.target.value)}
+                    placeholder="+91 98765 43210"
+                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 placeholder:text-navy-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all ${
+                      errors.phone ? 'border-red-400' : 'border-slate-200'
+                    }`}
+                  />
+                </div>
 
-                <input
-                  type="tel"
-                  value={formData.phone}
-                  onChange={(e) => handleChange('phone', e.target.value)}
-                  placeholder="+91 98765 43210"
-                  className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 placeholder:text-navy-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all ${
-                    errors.phone ? 'border-red-400' : 'border-slate-200'
-                  }`}
-                />
+                {errors.phone && (
+                  <p className="mt-1 text-xs text-red-500">
+                    {errors.phone}
+                  </p>
+                )}
               </div>
+            </div>
 
-              {errors.phone && (
-                <p className="mt-1 text-xs text-red-500">
-                  {errors.phone}
-                </p>
-              )}
-            </div>
-            </div>
-            
             <div className='flex gap-2'>
               {/* Email */}
-            <div>
-              <label className="block text-sm font-medium text-navy-700 mb-1.5">
-                Email Address
-              </label>
+              <div>
+                <label className="block text-sm font-medium text-navy-700 mb-1.5">
+                  Email Address
+                </label>
 
-              <div className="relative">
-                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-300" />
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-300" />
 
-                <input
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => handleChange('email', e.target.value)}
-                  placeholder="you@example.com"
-                  className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 placeholder:text-navy-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all ${
-                    errors.email ? 'border-red-400' : 'border-slate-200'
-                  }`}
-                />
+                  <input
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => handleChange('email', e.target.value)}
+                    placeholder="you@example.com"
+                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 placeholder:text-navy-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all ${
+                      errors.email ? 'border-red-400' : 'border-slate-200'
+                    }`}
+                  />
+                </div>
+
+                {errors.email && (
+                  <p className="mt-1 text-xs text-red-500">
+                    {errors.email}
+                  </p>
+                )}
               </div>
 
-              {errors.email && (
-                <p className="mt-1 text-xs text-red-500">
-                  {errors.email}
-                </p>
-              )}
-            </div>
+              {/* Travelers */}
+              <div>
+                <label className="block text-sm font-medium text-navy-700 mb-1.5">
+                  Number of Travelers
+                </label>
 
-            {/* Travelers */}
-            <div>
-              <label className="block text-sm font-medium text-navy-700 mb-1.5">
-                Number of Travelers
-              </label>
+                <div className="relative">
+                  <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-300" />
 
-              <div className="relative">
-                <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-navy-300" />
+                  <select
+                    value={formData.travelers}
+                    onChange={(e) =>
+                      handleChange('travelers', e.target.value)
+                    }
+                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 focus:outline-none focus:ring-2 focus:ring-amber-500/50 appearance-none cursor-pointer transition-all ${
+                      errors.travelers
+                        ? 'border-red-400'
+                        : 'border-slate-200'
+                    } ${!formData.travelers ? 'text-navy-300' : ''}`}
+                  >
+                    <option value="">Select travelers</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 Persons</option>
+                    <option value="3-5">3-5 Persons</option>
+                    <option value="6-10">6-10 Persons</option>
+                    <option value="10+">10+ Persons (Group)</option>
+                  </select>
+                </div>
 
-                <select
-                  value={formData.travelers}
-                  onChange={(e) =>
-                    handleChange('travelers', e.target.value)
-                  }
-                  className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 focus:outline-none focus:ring-2 focus:ring-amber-500/50 appearance-none cursor-pointer transition-all ${
-                    errors.travelers
-                      ? 'border-red-400'
-                      : 'border-slate-200'
-                  } ${!formData.travelers ? 'text-navy-300' : ''}`}
-                >
-                  <option value="">Select travelers</option>
-                  <option value="1">1 Person</option>
-                  <option value="2">2 Persons</option>
-                  <option value="3-5">3-5 Persons</option>
-                  <option value="6-10">6-10 Persons</option>
-                  <option value="10+">10+ Persons (Group)</option>
-                </select>
+                {errors.travelers && (
+                  <p className="mt-1 text-xs text-red-500">
+                    {errors.travelers}
+                  </p>
+                )}
               </div>
-
-              {errors.travelers && (
-                <p className="mt-1 text-xs text-red-500">
-                  {errors.travelers}
-                </p>
-              )}
             </div>
-            </div>
-            
 
             {/* Message */}
             <div>
