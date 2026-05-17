@@ -13,7 +13,7 @@ import {
 import JagannathTemple from '../assets/jagannath-puri-temple-odisha.png'
 import Tribe from '../assets/Tribes-of-Odisha.png'
 import Beach from '../assets/Puri-Sea-Beach.png'
-import Wildlife from '../assets/Wildlife.png'
+import Wildlife from '../assets/wildlife.png'
 
 const heroSlides = [
   {

@@ -6,7 +6,7 @@ import {
   Waves,
 } from 'lucide-react';
 import Jagannath from '../assets/jagannath-puri-temple-odisha.png'
-import Wildlife from '../assets/Wildlife.png'
+import Wildlife from '../assets/wildlife.png'
 import Tribe from '../assets/tribe2.png'
 import Beach from '../assets/Puri-Sea-Beach.png'
 
