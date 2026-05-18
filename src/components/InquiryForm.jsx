@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 import {
   X,
   User,
@@ -12,6 +14,8 @@ import {
 
 const InquiryForm = ({ isOpen, onClose }) => {
   const [submitted, setSubmitted] = useState(false);
+
+  const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -56,37 +60,37 @@ const InquiryForm = ({ isOpen, onClose }) => {
 
     if (!validate()) return;
 
-    const form = new FormData();
-
-    form.append('access_key', 'c2c47f5d-db28-4d20-b758-9f864ce4c14b');
-    form.append('subject', 'Odisha Trip Inquiry');
-    form.append('from_name', 'Odisha India Trip');
-
-    form.append('name', formData.name);
-    form.append('phone', formData.phone);
-    form.append('email', formData.email);
-    form.append('travelers', formData.travelers);
-    form.append('message', formData.message);
+    setLoading(true);
 
     try {
-      const response = await fetch(
-        'https://api.web3forms.com/submit',
+      await emailjs.send(
+        'service_q7cgd5b',
+        'template_cly0rgq',
         {
-          method: 'POST',
-          body: form,
-        }
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          travelers: formData.travelers,
+          message: formData.message,
+        },
+        'c9pWjFmgPHhbfiV2T'
       );
 
-      const data = await response.json();
+      setSubmitted(true);
 
-      if (data.success) {
-        setSubmitted(true);
-      } else {
-        alert('There was an issue submitting the form.');
-      }
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        travelers: '',
+        message: '',
+      });
     } catch (error) {
-      console.error('Form submission error:', error);
-      alert('An error occurred while submitting the form.');
+      console.error('EmailJS Error:', error);
+
+      alert('Failed to send enquiry.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -99,7 +103,9 @@ const InquiryForm = ({ isOpen, onClose }) => {
     if (errors[field]) {
       setErrors((prev) => {
         const next = { ...prev };
+
         delete next[field];
+
         return next;
       });
     }
@@ -166,8 +172,7 @@ const InquiryForm = ({ isOpen, onClose }) => {
             </h4>
 
             <p className="text-navy-500 text-sm mb-6">
-              Our travel experts will reach out to you within 30 minutes with a
-              customized quote.
+              Our travel experts will reach out shortly.
             </p>
 
             <button
@@ -179,9 +184,9 @@ const InquiryForm = ({ isOpen, onClose }) => {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="p-6 space-y-4">
-            <div className='flex gap-2'>
+            <div className="flex gap-2">
               {/* Name */}
-              <div>
+              <div className="w-1/2">
                 <label className="block text-sm font-medium text-navy-700 mb-1.5">
                   Full Name
                 </label>
@@ -194,8 +199,10 @@ const InquiryForm = ({ isOpen, onClose }) => {
                     value={formData.name}
                     onChange={(e) => handleChange('name', e.target.value)}
                     placeholder="Enter your full name"
-                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 placeholder:text-navy-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all ${
-                      errors.name ? 'border-red-400' : 'border-slate-200'
+                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm ${
+                      errors.name
+                        ? 'border-red-400'
+                        : 'border-slate-200'
                     }`}
                   />
                 </div>
@@ -208,7 +215,7 @@ const InquiryForm = ({ isOpen, onClose }) => {
               </div>
 
               {/* Phone */}
-              <div>
+              <div className="w-1/2">
                 <label className="block text-sm font-medium text-navy-700 mb-1.5">
                   Phone Number
                 </label>
@@ -221,8 +228,10 @@ const InquiryForm = ({ isOpen, onClose }) => {
                     value={formData.phone}
                     onChange={(e) => handleChange('phone', e.target.value)}
                     placeholder="+91 98765 43210"
-                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 placeholder:text-navy-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all ${
-                      errors.phone ? 'border-red-400' : 'border-slate-200'
+                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm ${
+                      errors.phone
+                        ? 'border-red-400'
+                        : 'border-slate-200'
                     }`}
                   />
                 </div>
@@ -235,9 +244,9 @@ const InquiryForm = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            <div className='flex gap-2'>
+            <div className="flex gap-2">
               {/* Email */}
-              <div>
+              <div className="w-1/2">
                 <label className="block text-sm font-medium text-navy-700 mb-1.5">
                   Email Address
                 </label>
@@ -250,8 +259,10 @@ const InquiryForm = ({ isOpen, onClose }) => {
                     value={formData.email}
                     onChange={(e) => handleChange('email', e.target.value)}
                     placeholder="you@example.com"
-                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 placeholder:text-navy-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all ${
-                      errors.email ? 'border-red-400' : 'border-slate-200'
+                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm ${
+                      errors.email
+                        ? 'border-red-400'
+                        : 'border-slate-200'
                     }`}
                   />
                 </div>
@@ -264,7 +275,7 @@ const InquiryForm = ({ isOpen, onClose }) => {
               </div>
 
               {/* Travelers */}
-              <div>
+              <div className="w-1/2">
                 <label className="block text-sm font-medium text-navy-700 mb-1.5">
                   Number of Travelers
                 </label>
@@ -277,11 +288,11 @@ const InquiryForm = ({ isOpen, onClose }) => {
                     onChange={(e) =>
                       handleChange('travelers', e.target.value)
                     }
-                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-900 focus:outline-none focus:ring-2 focus:ring-amber-500/50 appearance-none cursor-pointer transition-all ${
+                    className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm ${
                       errors.travelers
                         ? 'border-red-400'
                         : 'border-slate-200'
-                    } ${!formData.travelers ? 'text-navy-300' : ''}`}
+                    }`}
                   >
                     <option value="">Select travelers</option>
                     <option value="1">1 Person</option>
@@ -314,7 +325,7 @@ const InquiryForm = ({ isOpen, onClose }) => {
                   onChange={(e) => handleChange('message', e.target.value)}
                   placeholder="Tell us about your dream Odisha trip..."
                   rows={3}
-                  className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-navy-900 placeholder:text-navy-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 resize-none transition-all"
+                  className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm"
                 />
               </div>
             </div>
@@ -322,10 +333,17 @@ const InquiryForm = ({ isOpen, onClose }) => {
             {/* Submit */}
             <button
               type="submit"
-              className="btn-primary w-full py-3.5 text-sm mt-2"
+              disabled={loading}
+              className="btn-primary w-full py-3.5 text-sm mt-2 disabled:opacity-50"
             >
-              <Send className="w-4 h-4" />
-              Send Enquiry
+              {loading ? (
+                'Sending...'
+              ) : (
+                <>
+                  <Send className="w-4 h-4" />
+                  Send Enquiry
+                </>
+              )}
             </button>
 
             <p className="text-center text-xs text-navy-400">
