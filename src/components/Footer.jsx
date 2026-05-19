@@ -12,6 +12,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaYoutube,
+  FaWhatsapp
 } from 'react-icons/fa';
 
 const quickLinks = [
@@ -37,10 +38,10 @@ const destinations = [
 ];
 
 const legalLinks = [
-  { label: 'Terms & Conditions', href: '#' },
-  { label: 'Privacy Policy', href: '#' },
-  { label: 'Cancellation Policy', href: '#' },
-  { label: 'Refund Policy', href: '#' },
+  { label: 'Terms & Conditions', href: '/terms-and-conditions' },
+  { label: 'Privacy Policy', href: '/privacy-policy' },
+  { label: 'Cancellation Policy', href: '/cancellation-policy' },
+  { label: 'Refund Policy', href: '/refund-policy' },
 ];
 
 const socials = [
@@ -48,6 +49,7 @@ const socials = [
   { icon: FaInstagram, href: '#', label: 'Instagram' },
   { icon: FaTwitter, href: '#', label: 'Twitter' },
   { icon: FaYoutube, href: '#', label: 'YouTube' },
+  { icon: FaWhatsapp, href: '#', label: 'WhatsApp' },
 ];
 
 const Footer = () => {
@@ -64,8 +66,8 @@ const Footer = () => {
               </div>
 
               <div>
-                <span className="font-display font-bold text-xl text-white">
-                  Odisha IndiaTrip
+                <span className="font-display font-bold text-xl text-white whitespace-nowrap">
+                  Odisha IndiaTrip Pvt Ltd
                 </span>
 
                 <p className="text-[10px] tracking-widest uppercase text-amber-400">
@@ -75,7 +77,7 @@ const Footer = () => {
             </Link>
 
             <p className="text-white/50 text-sm leading-relaxed mb-5">
-              Odisha IndiaTrip is a government-approved Destination Management
+              Odisha IndiaTrip Pvt Ltd is a Destination Management
               Company offering authentic, handcrafted travel experiences across
               the soul of Incredible India — Odisha.
             </p>
@@ -192,13 +194,13 @@ const Footer = () => {
 
           <div className="flex items-center gap-4">
             {legalLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.href}
                 className="text-white/30 hover:text-white/60 text-xs transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

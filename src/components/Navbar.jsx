@@ -5,9 +5,9 @@ import Logo from '../assets/logo.png';
 
 const navLinks = [
   { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
   { label: 'Tour Packages', href: '/packages' },
   { label: 'Jagannath Darshan', href: '/jagannath-darshan' },
-  { label: 'Tribal Tours', href: '/tribal-tours' },
   { label: 'Destinations', href: '/destinations' },
   { label: 'Cab Rentals', href: '/cab-rentals' },
   { label: 'Eco Tourism', href: '/eco-tourism' },

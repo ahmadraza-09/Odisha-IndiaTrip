@@ -17,6 +17,7 @@ import Testimonials from './components/Testimonials';
 import CTABanner from './components/CTABanner';
 import InquiryForm from './components/InquiryForm';
 import Footer from './components/Footer';
+import Loader from './components/Loader';
 
 import HomePage from './pages/HomePage';
 import PackagesPage from './pages/PackagesPage';
@@ -30,6 +31,12 @@ import DestinationsPage from './pages/DestinationsPage';
 import DestinationDetailPage from './pages/DestinationDetailPage';
 import EcoTourismPage from './pages/EcoTourismPage';
 
+import AboutPage from './pages/AboutPage';
+import TermsPage from './pages/TermsPage';
+import PrivacyPage from './pages/PrivacyPage';
+import RefundPage from './pages/RefundPage';
+import CancellationPage from './pages/CancellationPage';
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -42,12 +49,33 @@ const ScrollToTop = () => {
 
 const AppContent = () => {
   const [inquiryOpen, setInquiryOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useScrollReveal();
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setLoading(false);
+    };
+
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
 
   const openInquiry = () => setInquiryOpen(true);
 
   const closeInquiry = () => setInquiryOpen(false);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <div className="min-h-screen bg-white">
@@ -107,7 +135,10 @@ const AppContent = () => {
           }
         />
 
-        <Route path="/blog" element={<BlogPage />} />
+        <Route
+          path="/blog"
+          element={<BlogPage />}
+        />
 
         <Route
           path="/blog/:id"
@@ -133,6 +164,31 @@ const AppContent = () => {
           element={
             <EcoTourismPage onOpenInquiry={openInquiry} />
           }
+        />
+
+        <Route
+          path="/about"
+          element={<AboutPage />}
+        />
+
+        <Route
+          path="/terms-and-conditions"
+          element={<TermsPage />}
+        />
+
+        <Route
+          path="/privacy-policy"
+          element={<PrivacyPage />}
+        />
+
+        <Route
+          path="/refund-policy"
+          element={<RefundPage />}
+        />
+
+        <Route
+          path="/cancellation-policy"
+          element={<CancellationPage />}
         />
       </Routes>
 

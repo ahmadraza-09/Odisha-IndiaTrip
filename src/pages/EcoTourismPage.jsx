@@ -75,7 +75,7 @@ const EcoTourismPage = ({ onOpenInquiry }) => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center gap-2 text-sm text-navy-700">
                   <CheckCircle className="w-4 h-4 text-emerald-500" />
-                  <span>Government-Approved</span>
+                  <span>Nature & Water</span>
                 </div>
 
                 <div className="flex items-center gap-2 text-sm text-navy-700">
