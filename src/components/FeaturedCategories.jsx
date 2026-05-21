@@ -5,10 +5,10 @@ import {
   Tent,
   Waves,
 } from 'lucide-react';
-import Jagannath from '../assets/jagannath-puri-temple-odisha.png'
-import Wildlife from '../assets/wildlife.png'
-import Tribe from '../assets/tribe2.png'
-import Beach from '../assets/Puri-Sea-Beach.png'
+import Jagannath from '../assets/jagannath-puri-temple-odisha.webp'
+import Wildlife from '../assets/wildlife.webp'
+import Tribe from '../assets/tribe2.webp'
+import Beach from '../assets/Puri-Sea-Beach.webp'
 
 const categories = [
   {

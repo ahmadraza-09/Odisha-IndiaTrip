@@ -9,11 +9,11 @@ import {
   Globe,
 } from 'lucide-react';
 
-import AboutCover from '../assets/about-cover.png'
-import JagannathTemple from '../assets/jagannath-puri-temple-odisha.png'
-import Tribe from '../assets/Tribes-of-Odisha.png'
-import Beach from '../assets/Puri-Sea-Beach.png'
-import Wildlife from '../assets/wildlife.png'
+import AboutCover from '../assets/about-cover.webp'
+import JagannathTemple from '../assets/jagannath-puri-temple-odisha.webp'
+import Tribe from '../assets/Tribes-of-Odisha.webp'
+import Beach from '../assets/Puri-Sea-Beach.webp'
+import Wildlife from '../assets/wildlife.webp'
 
 const stats = [
   { value: '10,000+', label: 'Happy Travelers', icon: Users },

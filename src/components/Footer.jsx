@@ -67,7 +67,7 @@ const Footer = () => {
 
               <div>
                 <span className="font-display font-bold text-xl text-white whitespace-nowrap">
-                  Odisha IndiaTrip Pvt Ltd
+                  Odisha IndiaTrip Pvt. Ltd.
                 </span>
 
                 <p className="text-[10px] tracking-widest uppercase text-amber-400">
@@ -77,7 +77,7 @@ const Footer = () => {
             </Link>
 
             <p className="text-white/50 text-sm leading-relaxed mb-5">
-              Odisha IndiaTrip Pvt Ltd is a Destination Management
+              Odisha IndiaTrip Pvt. Ltd. is a Destination Management
               Company offering authentic, handcrafted travel experiences across
               the soul of Incredible India — Odisha.
             </p>
