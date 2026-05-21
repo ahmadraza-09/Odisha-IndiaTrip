@@ -5,6 +5,7 @@ import {
   Clock,
   Share2,
 } from 'lucide-react';
+import SEO from '../components/SEO'
 
 import { blogPosts } from '../data/content';
 
@@ -57,6 +58,12 @@ const BlogDetailPage = () => {
 
   return (
     <div className="pt-24">
+      <SEO
+        title={`${post.title} | Odisha Travel Blog`}
+        description={post.excerpt}
+        keywords={`${post.category}, Odisha tourism, Odisha travel guide, ${post.title}, Odisha travel blog, Jagannath Puri tour, Odisha sightseeing`}
+        url={`https://odishaindiatrip.com/blog/${post.id}`}
+      />
       {/* Hero */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">

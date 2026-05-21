@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { destinations } from '../data/content';
+import SEO from '../components/SEO'
 
 const DestinationsPage = () => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Best Tourist Destinations in Odisha | Puri, Konark, Chilika & More"
+        description="Explore the best tourist destinations in Odisha including Jagannath Puri, Konark Sun Temple, Chilika Lake, Bhubaneswar, Daringbadi, Bhitarkanika, waterfalls, beaches, wildlife, and cultural heritage sites."
+        keywords="Odisha destinations, tourist places in Odisha, Puri tourism, Konark Sun Temple, Chilika Lake tour, Bhubaneswar sightseeing, Odisha beaches, Odisha wildlife, Odisha travel destinations, best places to visit in Odisha"
+        url="https://odishaindiatrip.com/destinations"
+      />
       {/* Header */}
       <div className="gradient-navy py-16 sm:py-20">
         <div className="container-max px-4 sm:px-6 lg:px-8 text-center">

@@ -9,6 +9,7 @@ import {
   TreePine,
   Palette,
 } from 'lucide-react';
+import SEO from '../components/SEO';
 import { allPackages } from '../data/content';
 
 const tribalPackages = allPackages.filter(
@@ -48,6 +49,12 @@ const tribalInfo = [
 const TribalPage = ({ onOpenInquiry }) => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Tribal Odisha Tour Packages | Tribal Culture Tours in Odisha"
+        description="Explore authentic tribal tours in Odisha with indigenous village visits, weekly tribal markets, Dongria Kondh culture, Koraput tours, tribal art, forests, and heritage experiences."
+        keywords="Tribal Odisha tour, Odisha tribal tour packages, Koraput tribal tour, Dongria Kondh tour, Odisha tribal culture, tribal villages Odisha, Odisha heritage tours, tribal market Odisha, Odisha culture trip, tribal tourism Odisha"
+        url="https://odishaindiatrip.com/tribal-tours"
+      />
       {/* Page Header */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">

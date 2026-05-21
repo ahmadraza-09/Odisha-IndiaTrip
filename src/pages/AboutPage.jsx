@@ -8,6 +8,7 @@ import {
   Target,
   Globe,
 } from 'lucide-react';
+import SEO from "../components/SEO"
 
 import AboutCover from '../assets/about-cover.webp'
 import JagannathTemple from '../assets/jagannath-puri-temple-odisha.webp'
@@ -74,14 +75,23 @@ const team = [
 ];
 
 const AboutPage = () => {
+  
   return (
+    <>
+    <SEO
+    title="About Odisha IndiaTrip Pvt. Ltd. | Trusted Odisha Travel Agency"
+    description="Learn about Odisha IndiaTrip Pvt. Ltd., Odisha’s trusted travel agency offering Jagannath Puri tours, Odisha holiday packages, Chilika trips, tribal tours, family vacations, and local travel experiences."
+    keywords="about Odisha IndiaTrip, Odisha travel agency, Odisha tourism company, Puri travel agency, Odisha holiday packages, Odisha DMC, Jagannath tour operator, Odisha local travel experts, Odisha family trip, Odisha tourism"
+    url="https://odishaindiatrip.com/about"
+  />
     <div className="pt-24">
+      
       {/* Hero */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={AboutCover}
-            alt=""
+            alt="About Cover Image"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-navy-950/70 via-navy-950/60 to-navy-950/90" />
@@ -147,25 +157,25 @@ const AboutPage = () => {
             <div className="grid grid-cols-2 gap-4">
               <img
                 src={JagannathTemple}
-                alt="Temple"
+                alt="Jagannath Temple Image"
                 className="rounded-2xl object-cover w-full h-48"
               />
 
               <img
                 src={Wildlife}
-                alt="Tribal"
+                alt="Wildlife Image"
                 className="rounded-2xl object-cover w-full h-48 mt-8"
               />
 
               <img
                 src={Tribe}
-                alt="Beach"
+                alt="Tribe Image"
                 className="rounded-2xl object-cover w-full h-48"
               />
 
               <img
                 src={Beach}
-                alt="Wildlife"
+                alt="Beach Image"
                 className="rounded-2xl object-cover w-full h-48 mt-8"
               />
             </div>
@@ -292,6 +302,7 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

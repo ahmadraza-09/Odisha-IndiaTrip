@@ -11,6 +11,7 @@ import {
   MapPin,
   Clock,
 } from 'lucide-react';
+import SEO from '../components/SEO';
 import { allPackages } from '../data/content';
 
 const includeIcons = [
@@ -47,6 +48,16 @@ const PackageDetailPage = ({ onOpenInquiry }) => {
 
   return (
     <div className="pt-24">
+      <SEO
+        title={`${pkg.title} | Odisha Tour Package with Hotel, Cab & Sightseeing`}
+        description={`${pkg.description} Book ${pkg.title} with hotel, cab, meals, sightseeing, and guided Odisha travel experience. Explore ${pkg.itinerary.join(
+          ', '
+        )} with affordable customized tour packages.`}
+        keywords={`${pkg.title}, Odisha tour package, Odisha holiday package, ${pkg.itinerary.join(
+          ', '
+        )}, Odisha travel packages, Odisha tourism, Puri package, Bhubaneswar tour, Jagannath tour package, Odisha sightseeing`}
+        url={`https://odishaindiatrip.com/packages/${pkg.id}`}
+      />
       {/* Hero */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">

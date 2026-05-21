@@ -8,6 +8,7 @@ import {
   Camera,
   Search,
 } from 'lucide-react';
+import SEO from '../components/SEO';
 import { allPackages } from '../data/content';
 
 const categories = [
@@ -45,6 +46,12 @@ const PackagesPage = ({ onOpenInquiry }) => {
 
   return (
     <div className="pt-24">
+      <SEO
+        title="Odisha Tour Packages | Puri, Konark, Chilika & Odisha Holiday Tours"
+        description="Explore the best Odisha tour packages including Jagannath Puri tours, Konark Sun Temple, Chilika Lake, wildlife, tribal culture, beaches, heritage, eco tourism, and customized Odisha holiday packages."
+        keywords="Odisha tour packages, Odisha holiday packages, Puri tour package, Konark tour package, Chilika Lake tour, Odisha travel packages, Odisha tourism, Odisha sightseeing, Odisha family tour, Odisha vacation packages"
+        url="https://odishaindiatrip.com/packages"
+      />
       <div className="gradient-navy py-16 sm:py-20">
         <div className="container-max px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block px-4 py-1.5 rounded-full bg-amber-500/15 text-amber-400 text-sm font-semibold mb-4">

@@ -5,12 +5,19 @@ import {
   CheckCircle,
   Tent,
 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 import { ecoRetreats } from '../data/content';
 
 const EcoTourismPage = ({ onOpenInquiry }) => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Eco Tourism in Odisha | Luxury Eco Retreats & Glamping Experiences"
+        description="Experience eco tourism in Odisha with luxury glamping retreats, nature camps, wildlife adventures, waterfalls, forests, tribal culture, and sustainable travel experiences across Odisha."
+        keywords="eco tourism Odisha, Odisha eco retreat, luxury camping Odisha, Odisha glamping, Odisha nature tourism, Odisha wildlife tourism, Odisha forest retreat, eco resorts Odisha, sustainable tourism Odisha, Odisha travel packages"
+        url="https://odishaindiatrip.com/eco-tourism"
+      />
       {/* Header */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">

@@ -4,6 +4,7 @@ import {
   MapPin,
   ArrowRight,
 } from 'lucide-react';
+import SEO from '../components/SEO';
 import { destinations } from '../data/content';
 
 const DestinationDetailPage = ({ onOpenInquiry }) => {
@@ -33,6 +34,12 @@ const DestinationDetailPage = ({ onOpenInquiry }) => {
 
   return (
     <div className="pt-24">
+      <SEO
+        title={`${dest.name} Tourism | Best Places to Visit in ${dest.name}, Odisha`}
+        description={`${dest.description} Explore top tourist attractions, sightseeing places, culture, beaches, temples, wildlife, and travel experiences in ${dest.name}, Odisha.`}
+        keywords={`${dest.name} tourism, ${dest.name} travel guide, places to visit in ${dest.name}, ${dest.name} attractions, Odisha tourism, Odisha travel destinations, ${dest.name} sightseeing`}
+        url={`https://odishaindiatrip.com/destinations/${dest.id}`}
+      />
       {/* Hero */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">

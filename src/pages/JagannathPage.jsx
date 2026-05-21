@@ -10,6 +10,7 @@ import {
   Calendar,
   ArrowRight,
 } from 'lucide-react';
+import SEO from '../components/SEO';
 import { allPackages } from '../data/content';
 
 const jagannathPackages = allPackages.filter(
@@ -52,6 +53,12 @@ const highlights = [
 const JagannathPage = ({ onOpenInquiry }) => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Jagannath Puri Tour Packages | VIP Darshan & Rath Yatra Tours"
+        description="Book Jagannath Puri tour packages with VIP darshan, Rath Yatra special tours, temple sightseeing, Puri beach stays, local guides, hotel, cab, meals, and spiritual Odisha experiences."
+        keywords="Jagannath Puri tour package, Puri Jagannath darshan, Rath Yatra package, Puri temple tour, Odisha spiritual tour, Jagannath temple VIP darshan, Puri sightseeing, Odisha pilgrimage tour, Puri holiday package"
+        url="https://odishaindiatrip.com/jagannath-darshan"
+      />
       {/* Page Header */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">

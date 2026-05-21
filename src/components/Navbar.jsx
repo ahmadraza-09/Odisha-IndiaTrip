@@ -49,9 +49,9 @@ const Navbar = ({ onOpenInquiry }) => {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-2 group"
           >
-            <div className="w-14 h-14 flex items-center justify-center">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
               <img
                 src={Logo}
                 alt="Odisha IndiaTrip"
@@ -59,9 +59,21 @@ const Navbar = ({ onOpenInquiry }) => {
               />
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col leading-tight">
+              {/* Mobile Text */}
               <span
-                className={`font-display font-bold text-xl leading-tight transition-colors duration-300 ${
+                className={`block lg:hidden font-display font-bold text-lg transition-colors duration-300 ${
+                  scrolled || !isHome
+                    ? 'text-navy-900'
+                    : 'text-white'
+                }`}
+              >
+                Odisha IndiaTrip Pvt. Ltd.
+              </span>
+
+              {/* Desktop Text */}
+              <span
+                className={`hidden lg:block font-display font-bold text-xl transition-colors duration-300 ${
                   scrolled || !isHome
                     ? 'text-navy-900'
                     : 'text-white'
@@ -71,7 +83,7 @@ const Navbar = ({ onOpenInquiry }) => {
               </span>
 
               <span
-                className={`text-[10px] font-medium tracking-widest uppercase transition-colors duration-300 ${
+                className={`text-[9px] sm:text-[10px] font-medium tracking-widest uppercase transition-colors duration-300 ${
                   scrolled || !isHome
                     ? 'text-navy-600'
                     : 'text-amber-300'

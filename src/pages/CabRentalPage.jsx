@@ -12,6 +12,8 @@ import {
   CheckCircle,
 } from 'lucide-react';
 
+import SEO from '../components/SEO'
+
 const vehicles = [
   {
     name: 'Swift Dzire',
@@ -163,6 +165,12 @@ const whyUs = [
 const CabRentalPage = ({ onOpenInquiry }) => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Cab Rental in Odisha | Taxi Service in Puri, Bhubaneswar & Cuttack"
+        description="Book reliable cab rental services in Odisha with professional drivers and comfortable vehicles. Available for Bhubaneswar airport transfer, Puri sightseeing, Jagannath Temple visits, Chilika Lake tours, family trips, and outstation travel."
+        keywords="cab rental Odisha, taxi service Odisha, Bhubaneswar cab booking, Puri taxi service, Odisha car rental, airport taxi Bhubaneswar, Jagannath Puri cab, Odisha tour cab, outstation taxi Odisha, Odisha travel taxi"
+        url="https://odishaindiatrip.com/cab-rentals"
+      />
       {/* Page Header */}
       <div className="gradient-navy py-16 sm:py-20">
         <div className="container-max px-4 sm:px-6 lg:px-8 text-center">

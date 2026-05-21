@@ -8,6 +8,8 @@ import {
   Search,
 } from 'lucide-react';
 
+import SEO from '../components/SEO'
+
 import { blogPosts } from '../data/content';
 
 const categories = [
@@ -51,6 +53,12 @@ const BlogPage = () => {
 
   return (
     <div className="pt-24">
+      <SEO
+        title="Odisha Travel Blog | Odisha Tourism Guides, Tips & Travel Stories"
+        description="Explore Odisha travel blogs, destination guides, Jagannath Puri travel tips, Chilika Lake tours, Odisha culture, beaches, wildlife, festivals, food, and local travel experiences."
+        keywords="Odisha travel blog, Odisha tourism blog, Puri travel guide, Jagannath Puri blog, Odisha beaches, Chilika Lake travel, Odisha culture, Odisha travel tips, Odisha tourism guide, Odisha travel stories"
+        url="https://odishaindiatrip.com/blog"
+      />
       <div className="gradient-navy py-16 sm:py-20">
         <div className="container-max px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block px-4 py-1.5 rounded-full bg-amber-500/15 text-amber-400 text-sm font-semibold mb-4">

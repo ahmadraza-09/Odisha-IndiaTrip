@@ -10,6 +10,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from 'lucide-react';
+import SEO from '../components/SEO';
 import JagannathTemple from '../assets/jagannath-puri-temple-odisha.webp'
 import Tribe from '../assets/Tribes-of-Odisha.webp'
 import Beach from '../assets/Puri-Sea-Beach.webp'
@@ -101,6 +102,12 @@ const Hero = ({ onOpenInquiry }) => {
       id="home"
       className="relative min-h-screen flex items-center overflow-hidden"
     >
+      <SEO
+        title="Odisha Tour Packages & Travel Agency | Odisha IndiaTrip Pvt. Ltd."
+        description="Discover the best Odisha tour packages with Odisha IndiaTrip Pvt. Ltd. Explore Jagannath Puri, Konark Sun Temple, Chilika Lake, Bhubaneswar, beaches, wildlife, tribal tours, eco tourism, and cab rental services in Odisha."
+        keywords="Odisha tour packages, Odisha tourism, Odisha travel agency, Puri tour package, Jagannath Puri tour, Konark tour, Chilika Lake tour, Odisha cab rental, Odisha holiday packages, Odisha sightseeing"
+        url="https://odishaindiatrip.com/"
+      />
       {/* Background Slides */}
       {heroSlides.map((s, i) => (
         <div
