@@ -1,0 +1,82 @@
+import { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
+
+const faqs = [
+  {
+    question: 'What is the best time to visit Odisha?',
+    answer:
+      'October to March is the best time to visit Odisha for pleasant weather and sightseeing.',
+  },
+
+  {
+    question: 'Do you provide hotel booking services?',
+    answer:
+      'Yes, we provide hotel booking services in Puri, Bhubaneswar, Konark, Daringbadi and more.',
+  },
+
+  {
+    question: 'Can I customize my Odisha tour package?',
+    answer:
+      'Yes, all our tour packages can be customized according to your needs.',
+  },
+
+  {
+    question: 'Do you provide transportation?',
+    answer:
+      'Yes, we provide private cab and transportation services.',
+  },
+];
+
+const FAQPage = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  return (
+    <div className="pt-24 bg-slate-50 min-h-screen">
+      <div className="gradient-navy py-16 text-center">
+        <h1 className="font-display text-5xl font-bold text-white mb-4">
+          Frequently Asked Questions
+        </h1>
+
+        <p className="text-white/60">
+          Everything you need to know before planning your Odisha trip.
+        </p>
+      </div>
+
+      <div className="container-max section-padding max-w-4xl">
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-sm overflow-hidden"
+            >
+              <button
+                onClick={() =>
+                  setOpenIndex(openIndex === index ? null : index)
+                }
+                className="w-full flex items-center justify-between p-6 text-left"
+              >
+                <span className="font-semibold text-lg text-navy-900">
+                  {faq.question}
+                </span>
+
+                <ChevronDown
+                  className={`w-5 h-5 transition ${
+                    openIndex === index ? 'rotate-180' : ''
+                  }`}
+                />
+              </button>
+
+              {openIndex === index && (
+                <div className="px-6 pb-6 text-slate-600">
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FAQPage;

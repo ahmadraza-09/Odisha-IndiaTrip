@@ -37,6 +37,12 @@ import PrivacyPage from './pages/PrivacyPage';
 import RefundPage from './pages/RefundPage';
 import CancellationPage from './pages/CancellationPage';
 
+/* NEW PAGES */
+import HotelsPage from './pages/HotelsPage';
+import CityHotelsPage from './pages/CityHotelsPage';
+import HotelDetailsPage from './pages/HotelDetailsPage';
+import FAQPage from './pages/FAQPage';
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
@@ -164,6 +170,30 @@ const AppContent = () => {
           element={
             <EcoTourismPage onOpenInquiry={openInquiry} />
           }
+        />
+
+        {/* NEW HOTELS ROUTES */}
+
+        <Route
+          path="/hotels"
+          element={<HotelsPage />}
+        />
+
+        <Route
+          path="/hotels/:city"
+          element={<CityHotelsPage />}
+        />
+
+        <Route
+          path="/hotel/:id"
+          element={<HotelDetailsPage />}
+        />
+
+        {/* FAQ PAGE */}
+
+        <Route
+          path="/faq"
+          element={<FAQPage />}
         />
 
         <Route

@@ -6,12 +6,13 @@ import Logo from '../assets/logo.png';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
+  { label: 'Our Hotels', href: '/hotels' },
   { label: 'Tour Packages', href: '/packages' },
   { label: 'Jagannath Darshan', href: '/jagannath-darshan' },
   { label: 'Destinations', href: '/destinations' },
   { label: 'Cab Rentals', href: '/cab-rentals' },
   { label: 'Eco Tourism', href: '/eco-tourism' },
-  { label: 'Blog', href: '/blog' },
+  // { label: 'Blog', href: '/blog' },
 ];
 
 const Navbar = ({ onOpenInquiry }) => {

@@ -18,12 +18,14 @@ import {
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'Tour Packages', href: '/packages' },
+  { label: 'Our Hotels', href: '/hotels' },
   { label: 'Jagannath Darshan', href: '/jagannath-darshan' },
   { label: 'Tribal Tours', href: '/tribal-tours' },
   { label: 'Destinations', href: '/destinations' },
   { label: 'Cab Rentals', href: '/cab-rentals' },
   { label: 'Eco Tourism', href: '/eco-tourism' },
   { label: 'Blog', href: '/blog' },
+  { label: 'FAQ', href: '/faq' },
 ];
 
 const destinations = [
