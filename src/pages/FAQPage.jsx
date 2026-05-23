@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import SEO from '../components/SEO'
 
 const faqs = [
   {
@@ -32,6 +33,12 @@ const FAQPage = () => {
 
   return (
     <div className="pt-24 bg-slate-50 min-h-screen">
+      <SEO
+        title="FAQ | Odisha Tour Packages, Hotels & Travel Information"
+        description="Find answers to common questions about Odisha tour packages, hotel bookings, cab services, customized trips, best time to visit Odisha, and travel planning assistance."
+        keywords="Odisha travel FAQ, Odisha tourism questions, Odisha tour package FAQ, Odisha hotel booking, Odisha cab service, best time to visit Odisha, Odisha travel guide, Odisha holiday planning"
+        url="https://odishaindiatrip.com/faq"
+      />
       <div className="gradient-navy py-16 text-center">
         <h1 className="font-display text-5xl font-bold text-white mb-4">
           Frequently Asked Questions

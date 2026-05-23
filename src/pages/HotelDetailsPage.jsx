@@ -1,11 +1,22 @@
 import { useParams } from 'react-router-dom';
 import { hotels } from '../data/hotels';
 import { MapPin, Star } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const HotelDetailsPage = () => {
   const { id } = useParams();
 
   const hotel = hotels.find((item) => item.id === id);
+
+  const handleBookNow = () => {
+    const message = `Hello, I want to book ${hotel.name} in ${hotel.city}. Please share details about availability and pricing.`;
+
+    const whatsappUrl = `https://wa.me/919958826437?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappUrl, '_blank');
+  };
 
   if (!hotel) {
     return <div className="pt-32 text-center">Hotel not found</div>;
@@ -13,6 +24,13 @@ const HotelDetailsPage = () => {
 
   return (
     <div className="pt-24 bg-slate-50 min-h-screen">
+      <SEO
+        title={`${hotel.name} | Hotel in ${hotel.city} Odisha`}
+        description={`${hotel.name} in ${hotel.city}, Odisha offers comfortable accommodation with modern amenities, great location, and premium hospitality for travelers visiting Odisha.`}
+        keywords={`${hotel.name}, hotel in ${hotel.city}, ${hotel.city} Odisha hotel, Odisha accommodation, luxury hotel ${hotel.city}, budget hotel ${hotel.city}, Odisha hotel booking, hotels near ${hotel.location}`}
+        url={`https://odishaindiatrip.com/hotel/${hotel.id}`}
+      />
+
       <div className="container-max section-padding">
         <div className="grid lg:grid-cols-2 gap-10">
           <img
@@ -57,11 +75,10 @@ const HotelDetailsPage = () => {
               </div>
             </div>
 
-            <div className="text-3xl font-bold text-amber-500 mb-6">
-              {hotel.price}
-            </div>
-
-            <button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-2xl font-semibold transition">
+            <button
+              onClick={handleBookNow}
+              className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-2xl font-semibold transition"
+            >
               Book Your Stay
             </button>
           </div>

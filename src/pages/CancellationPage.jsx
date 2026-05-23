@@ -1,9 +1,16 @@
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO'
 
 const CancellationPage = () => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Cancellation Policy | Odisha IndiaTrip"
+        description="Read the Cancellation Policy of Odisha IndiaTrip for Odisha tour packages, hotel bookings, cab rentals, refund timelines, festival booking cancellations, and travel cancellation charges."
+        keywords="Cancellation Policy Odisha IndiaTrip, Odisha tour cancellation policy, Odisha hotel cancellation, cab booking cancellation Odisha, Odisha travel refund policy, Jagannath tour cancellation, Odisha package cancellation charges, Odisha trip cancellation"
+        url="https://odishaindiatrip.com/cancellation-policy"
+      />
       <div className="gradient-navy py-12">
         <div className="container-max px-4 sm:px-6 lg:px-8">
           <Link

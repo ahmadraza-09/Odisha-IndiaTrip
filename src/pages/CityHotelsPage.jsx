@@ -1,14 +1,32 @@
 import { Link, useParams } from 'react-router-dom';
 import { hotels } from '../data/hotels';
 import { Star, MapPin } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const CityHotelsPage = () => {
   const { city } = useParams();
 
   const cityHotels = hotels.filter((hotel) => hotel.city === city);
 
+  const handleBookNow = (hotel) => {
+    const message = `Hello, I want to book ${hotel.name} in ${city}. Please share details.`;
+
+    const whatsappUrl = `https://wa.me/919958826437?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="pt-24 bg-slate-50 min-h-screen">
+      <SEO
+        title={`Hotels in ${city} Odisha | Luxury, Budget & Family Hotels`}
+        description={`Find the best hotels in ${city}, Odisha with comfortable stays, luxury accommodations, family-friendly hotels, beach resorts, and affordable rooms for your Odisha trip.`}
+        keywords={`${city} hotels, hotels in ${city} Odisha, ${city} accommodation, luxury hotels ${city}, budget hotels ${city}, Odisha hotel booking, family hotels ${city}, resorts in ${city}`}
+        url={`https://odishaindiatrip.com/hotels/${city}`}
+      />
+
       <div className="gradient-navy py-16 text-center">
         <h1 className="font-display text-4xl font-bold text-white capitalize">
           Hotels in {city}
@@ -46,12 +64,11 @@ const CityHotelsPage = () => {
                     {hotel.location}
                   </div>
 
-                  <p className="text-slate-600 mb-4">
-                    {hotel.price}
-                  </p>
-
                   <div className="flex gap-3">
-                    <button className="flex-1 bg-amber-500 hover:bg-amber-600 text-white py-3 rounded-xl font-semibold transition">
+                    <button
+                      onClick={() => handleBookNow(hotel)}
+                      className="flex-1 bg-amber-500 hover:bg-amber-600 text-white py-3 rounded-xl font-semibold transition"
+                    >
                       Book Now
                     </button>
 

@@ -1,25 +1,24 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // 1. Import useNavigate
 import {
   Search,
   MapPin,
   Calendar,
   Clock,
-  Shield,
-  Headphones,
-  Users,
   ChevronLeft,
   ChevronRight,
+  Headphones,
+  Users,
 } from 'lucide-react';
 import SEO from '../components/SEO';
-import JagannathTemple from '../assets/jagannath-puri-temple-odisha.webp'
-import Tribe from '../assets/Tribes-of-Odisha.webp'
-import Beach from '../assets/Puri-Sea-Beach.webp'
-import Wildlife from '../assets/wildlife.webp'
+import JagannathTemple from '../assets/jagannath-puri-temple-odisha.webp';
+import Tribe from '../assets/Tribes-of-Odisha.webp';
+import Beach from '../assets/Puri-Sea-Beach.webp';
+import Wildlife from '../assets/wildlife.webp';
 
 const heroSlides = [
   {
-    image:
-      JagannathTemple,
+    image: JagannathTemple,
     headline: 'Unveiling the',
     highlight: 'Soul',
     subline: 'of Incredible India',
@@ -27,8 +26,7 @@ const heroSlides = [
       'From the sacred Jagannath Temple to the pristine beaches of Gopalpur — experience Odisha with the locals who know it best.',
   },
   {
-    image:
-      Beach,
+    image: Beach,
     headline: 'Pristine',
     highlight: 'Beaches',
     subline: 'of Eastern India',
@@ -36,8 +34,7 @@ const heroSlides = [
       'Gopalpur-on-Sea, Puri Beach, Chandipur — where golden sands meet the Bay of Bengal in perfect harmony.',
   },
   {
-    image:
-      Wildlife,
+    image: Wildlife,
     headline: 'Untamed',
     highlight: 'Wildlife',
     subline: 'of Odisha',
@@ -45,8 +42,7 @@ const heroSlides = [
       'Bhitarkanika mangroves, Chilika dolphins, Simlipal tigers — discover nature at its rawest and most beautiful.',
   },
   {
-    image:
-      Tribe,
+    image: Tribe,
     headline: 'Ancient',
     highlight: 'Tribal',
     subline: 'Culture Awaits',
@@ -63,7 +59,10 @@ const destinations = [
   'Bhitarkanika',
   'Tribal Odisha',
   'Gopalpur',
-  'Simlipal',
+  'Kolkata',
+  'Deoghar',
+  'Cuttack',
+  'Ganga Sagar',
 ];
 
 const trustBadges = [
@@ -71,7 +70,8 @@ const trustBadges = [
   { icon: Users, label: '10,000+ Happy Travelers', sub: 'Since 2015' },
 ];
 
-const Hero = ({ onOpenInquiry }) => {
+const Hero = () => {
+  const navigate = useNavigate(); // 2. Initialize the hook
   const [current, setCurrent] = useState(0);
   const [destination, setDestination] = useState('');
   const [date, setDate] = useState('');
@@ -93,6 +93,27 @@ const Hero = ({ onOpenInquiry }) => {
 
   const next = () => {
     setCurrent((c) => (c + 1) % heroSlides.length);
+  };
+
+  // 3. Handle the programmatic redirection purely via routes
+  const handleExplore = () => {
+    if (!destination) {
+      // Fallback to the main packages overview layout if no destination is specified
+      navigate('/destinations');
+      return;
+    }
+
+    // Convert string like "Chilika Lake" -> "chilika-lake"
+    const destinationSlug = destination.toLowerCase().replace(/\s+/g, '-');
+
+    // Generates a query string context for your package list filtering view
+    const queryParams = new URLSearchParams({
+      search: destinationSlug,
+      date: date,
+      duration: duration,
+    }).toString();
+
+    navigate(`/destinations?${queryParams}`);
   };
 
   const slide = heroSlides[current];
@@ -257,7 +278,7 @@ const Hero = ({ onOpenInquiry }) => {
 
                 {/* Button */}
                 <button
-                  onClick={onOpenInquiry}
+                  onClick={handleExplore} // 4. Fires route navigation exclusively
                   className="btn-primary rounded-xl py-3 text-sm"
                 >
                   <Search className="w-4 h-4" />
@@ -292,17 +313,6 @@ const Hero = ({ onOpenInquiry }) => {
           ))}
         </div>
       </div>
-
-      {/* Scroll Indicator
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="text-white/40 text-xs tracking-widest uppercase">
-          Scroll
-        </span>
-
-        <div className="w-5 h-8 rounded-full border-2 border-white/20 flex justify-center pt-1">
-          <div className="w-1 h-2 rounded-full bg-amber-400 animate-bounce" />
-        </div>
-      </div> */}
     </section>
   );
 };

@@ -1,9 +1,16 @@
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO'
 
 const TermsPage = () => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Terms & Conditions | Odisha IndiaTrip"
+        description="Read the official Terms & Conditions of Odisha IndiaTrip for Odisha tour packages, hotel bookings, transportation services, payments, cancellations, tribal tours, and Jagannath Darshan travel services."
+        keywords="Odisha IndiaTrip terms, Odisha travel terms and conditions, Odisha tour booking policy, Jagannath tour conditions, Odisha DMC terms, Odisha travel company policies, Odisha hotel booking terms"
+        url="https://odishaindiatrip.com/terms-and-conditions"
+      />
       <div className="gradient-navy py-12">
         <div className="container-max px-4 sm:px-6 lg:px-8">
           <Link

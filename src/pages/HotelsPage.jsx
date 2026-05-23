@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
 import { hotelCities } from '../data/hotels';
 import { MapPin, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO'
 
 const HotelsPage = () => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Hotels in Odisha | Luxury & Budget Hotels in Puri, Bhubaneswar & More"
+        description="Browse the best hotels in Odisha including Puri, Bhubaneswar, Konark, Chilika, Gopalpur, and other top destinations. Find luxury, family, beachside, and budget hotel stays."
+        keywords="Hotels in Odisha, Odisha hotels, Puri hotels, Bhubaneswar hotels, Konark hotels, Chilika hotels, beach hotels Odisha, luxury hotels Odisha, budget hotels Odisha, Odisha accommodation"
+        url="https://odishaindiatrip.com/hotels"
+      />
       <div className="gradient-navy py-16 sm:py-20">
         <div className="container-max px-4 text-center">
           <span className="inline-block px-4 py-1.5 rounded-full bg-amber-500/15 text-amber-400 text-sm font-semibold mb-4">

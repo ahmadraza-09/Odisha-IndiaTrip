@@ -6,7 +6,7 @@ import {
   useLocation,
 } from 'react-router-dom';
 
-import useScrollReveal from './hooks/useScrollReveal';
+// import useScrollReveal from './hooks/useScrollReveal';
 
 import Navbar from './components/Navbar';
 import Topbar from './components/Topbar';
@@ -57,7 +57,7 @@ const AppContent = () => {
   const [inquiryOpen, setInquiryOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  useScrollReveal();
+  // useScrollReveal();
 
   useEffect(() => {
     const handleLoad = () => {

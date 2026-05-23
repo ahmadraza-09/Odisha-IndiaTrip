@@ -1,9 +1,16 @@
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO'
 
 const PrivacyPage = () => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Privacy Policy | Odisha IndiaTrip"
+        description="Read the Privacy Policy of Odisha IndiaTrip to understand how we collect, use, store, and protect your personal information for Odisha tour packages, hotel bookings, cab rentals, and travel services."
+        keywords="Privacy Policy Odisha IndiaTrip, Odisha travel privacy policy, Odisha tour data protection, hotel booking privacy Odisha, cab booking privacy policy, Odisha travel company privacy, Odisha tourism privacy policy, Odisha IndiaTrip data security"
+        url="https://odishaindiatrip.com/privacy-policy"
+      />
       <div className="gradient-navy py-12">
         <div className="container-max px-4 sm:px-6 lg:px-8">
           <Link to="/" className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm mb-4 transition-colors">

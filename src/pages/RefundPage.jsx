@@ -1,9 +1,16 @@
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO'
 
 const RefundPage = () => {
   return (
     <div className="pt-24">
+      <SEO
+        title="Refund Policy | Odisha IndiaTrip"
+        description="Read the Refund Policy of Odisha IndiaTrip for tour packages, hotel bookings, cab rentals, cancellations, refund timelines, force majeure policies, and payment refund procedures in Odisha."
+        keywords="Refund Policy Odisha IndiaTrip, Odisha tour refund policy, hotel booking refund Odisha, cab booking cancellation Odisha, Odisha travel refunds, Odisha tour cancellation refund, Jagannath tour refund policy, Odisha hotel refund, Odisha IndiaTrip cancellation"
+        url="https://odishaindiatrip.com/refund-policy"
+      />
       <div className="gradient-navy py-12">
         <div className="container-max px-4 sm:px-6 lg:px-8">
           <Link to="/" className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm mb-4 transition-colors">
