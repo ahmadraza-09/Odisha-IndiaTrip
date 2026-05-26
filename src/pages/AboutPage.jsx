@@ -129,7 +129,7 @@ const AboutPage = () => {
               </h2>
 
               <p className="text-navy-500 text-base leading-relaxed mb-4">
-                Odisha IndiaTrip was founded in 2016 with a simple belief: the best
+                Odisha IndiaTrip was founded in 2015 with a simple belief: the best
                 way to experience Odisha is through the eyes of someone who
                 lives and breathes this land. We are not a marketplace that
                 resells someone else&apos;s tour. We are the operators on the ground —
@@ -147,9 +147,10 @@ const AboutPage = () => {
               </p>
 
               <p className="text-navy-500 text-base leading-relaxed">
-                We are proud members of IATO (Indian Association of Tour
+                {/* We are proud members of IATO (Indian Association of Tour
                 Operators) and are recognized by the Department of Tourism,
-                Government of Odisha. Our B2B partners trust us for consistent
+                Government of Odisha.  */}
+                Our B2B partners trust us for consistent
                 quality, transparent pricing, and 24/7 on-ground support.
               </p>
             </div>

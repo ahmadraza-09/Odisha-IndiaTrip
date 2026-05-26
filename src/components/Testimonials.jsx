@@ -6,6 +6,9 @@ import {
   ChevronRight,
 } from 'lucide-react';
 
+import MaleAvatar from '../assets/avatar/male-avatar.jpg'
+import FemaleAvatar from '../assets/avatar/female-avatar.jpg'
+
 const testimonials = [
   {
     name: 'Rajesh Sharma',
@@ -14,8 +17,7 @@ const testimonials = [
       'The Puri Jagannath Darshan package was beyond our expectations. The local guide knew every story behind the temple. Truly a spiritual experience we will never forget.',
     rating: 5,
     tour: 'Puri Jagannath Darshan',
-    image:
-      'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100',
+    image: MaleAvatar,
   },
   {
     name: 'Priya Menon',
@@ -24,18 +26,16 @@ const testimonials = [
       'The Tribal Odisha tour opened our eyes to a completely different world. The weekly haats, the Dongria Kondh villages — it was raw, real, and deeply moving.',
     rating: 5,
     tour: 'Tribal Odisha Expedition',
-    image:
-      'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100',
+    image: FemaleAvatar,
   },
   {
-    name: 'David Chen',
-    location: 'Singapore',
+    name: 'Rahul Kumar',
+    location: 'Uttar Pradesh',
     text:
       'As a B2B partner, working with Odisha IndiaTrip has been seamless. Their on-ground execution, vehicle quality, and hotel selections are consistently excellent.',
     rating: 5,
     tour: 'B2B Partner',
-    image:
-      'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=100',
+    image: MaleAvatar,
   },
   {
     name: 'Anita Desai',
@@ -44,18 +44,16 @@ const testimonials = [
       'The Chilika boat ride at sunset was magical. We spotted dolphins and migratory birds. The eco retreat stay was the perfect blend of nature and comfort.',
     rating: 5,
     tour: 'Chilika Bird Watching',
-    image:
-      'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100',
+    image: FemaleAvatar,
   },
   {
-    name: 'Michael Torres',
-    location: 'New York',
+    name: 'Sanjay Singh',
+    location: 'Noida',
     text:
       'The Bhitarkanika wildlife tour was a once-in-a-lifetime experience. Seeing saltwater crocodiles in their natural habitat from a boat was absolutely thrilling.',
     rating: 5,
     tour: 'Bhitarkanika Wildlife Tour',
-    image:
-      'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=100',
+    image: MaleAvatar,
   },
   {
     name: 'Sunita Patel',
@@ -64,8 +62,7 @@ const testimonials = [
       'We booked the Golden Triangle package for our family. The kids loved the beach, the elders loved the temples, and we all loved the food. Perfect family trip!',
     rating: 5,
     tour: 'Golden Triangle of Odisha',
-    image:
-      'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100',
+    image: FemaleAvatar,
   },
 ];
 
