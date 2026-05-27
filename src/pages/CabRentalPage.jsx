@@ -12,119 +12,328 @@ import {
   CheckCircle,
 } from 'lucide-react';
 
+import HundaiXcent from '../assets/vehicle/hundia-xcent.webp'
+import SwiftDzire from '../assets/vehicle/swift-desire.avif'
+import HondaAmaze from '../assets/vehicle/honda-amaze.avif'
+import ToyotaEtios from '../assets/vehicle/Toyota-Platinum-Etios.avif'
+import ChevroletTavera from '../assets/vehicle/Chevrolet-Tavera.avif'
+import ToyotaInnova from '../assets/vehicle/Toyota-Innova.jpg'
+import ToyotaInnovaCrysta from '../assets/vehicle/Toyota-Innova-Crysta.jpg'
+import MercedesCLA200 from '../assets/vehicle/Mercdes-Cla-200.avif'
+import AudiA4 from '../assets/vehicle/Audi-A4.jpg'
+import JaguarXF from '../assets/vehicle/Jaguar-XF.avif'
+import SeaterWinger from '../assets/vehicle/tata-winger.jpg'
+import SeaterWinger9 from '../assets/vehicle/AC-9-Seater-Winger.jpg'
+import SeaterTraveller13 from '../assets/vehicle/AC-13-Seater-Traveller.jpg'
+import SeaterTraveller17 from '../assets/vehicle/AC-17-Seater-Traveller.jpg'
+import SeaterTraveller25 from '../assets/vehicle/AC-25-Seater-Traveller.jpg'
+import BharatBenzCoach from '../assets/vehicle/36-Seater-Bharat-Benz-Coach.jpg'
+import Volvo45Seater from '../assets/vehicle/Volvo-45-Seater-AC-Coach.jpg'
+import CoachSeater44 from '../assets/vehicle/44SeaterCoach.jpg'
+
+
 import SEO from '../components/SEO'
 
 const vehicles = [
+  // SEDAN CARS
+  {
+    name: 'Hyundai Xcent',
+    type: 'Sedan',
+    image: HundaiXcent,
+    seats: 4,
+    fuel: 'Petrol',
+    mileage: '19+ km/l',
+    pricePerKm: '₹12',
+    pricePerDay: '₹2,350',
+    price8hr: '₹1,900',
+    features: ['AC', 'Music System', 'GPS', 'Comfort Seats'],
+    popular: false,
+    description:
+      'Affordable sedan perfect for city rides, airport pickup, and local sightseeing.',
+  },
+
   {
     name: 'Swift Dzire',
     type: 'Sedan',
-    image:
-      'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: SwiftDzire,
     seats: 4,
     fuel: 'Petrol / CNG',
     mileage: '20+ km/l',
-    pricePerKm: '₹12',
-    pricePerDay: '₹2,499',
-    price8hr: '₹1,899',
+    pricePerKm: '₹13',
+    pricePerDay: '₹2,500',
+    price8hr: '₹2,000',
     features: ['AC', 'Music System', 'Boot Space', 'GPS'],
     popular: true,
     description:
-      'Ideal for couples and small families. Comfortable sedan with excellent fuel efficiency for city tours and short trips.',
+      'Comfortable and fuel-efficient sedan for Odisha tours and family travel.',
   },
+
   {
-    name: 'Toyota Innova Crysta',
-    type: 'MPV',
-    image:
-      'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=400',
-    seats: 7,
-    fuel: 'Diesel',
-    mileage: '14+ km/l',
-    pricePerKm: '₹16',
-    pricePerDay: '₹4,499',
-    price8hr: '₹3,499',
-    features: [
-      'AC',
-      'Captain Seats',
-      'Entertainment',
-      'GPS',
-      'Extra Luggage',
-    ],
-    popular: true,
-    description:
-      'The gold standard for family tours and group travel. Spacious, powerful, and supremely comfortable for long Odisha road trips.',
-  },
-  {
-    name: 'Toyota Etios',
+    name: 'Honda Amaze',
     type: 'Sedan',
-    image:
-      'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=400',
-    seats: 4,
-    fuel: 'Diesel',
-    mileage: '22+ km/l',
-    pricePerKm: '₹11',
-    pricePerDay: '₹2,299',
-    price8hr: '₹1,699',
-    features: ['AC', 'Music System', 'Large Boot', 'GPS'],
-    popular: false,
-    description:
-      'Budget-friendly diesel sedan with great mileage. Perfect for Bhubaneswar-Puri-Konark circuit and airport transfers.',
-  },
-  {
-    name: 'Tempo Traveller (12 Seater)',
-    type: 'Mini Bus',
-    image:
-      'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=400',
-    seats: 12,
-    fuel: 'Diesel',
-    mileage: '10+ km/l',
-    pricePerKm: '₹22',
-    pricePerDay: '₹6,999',
-    price8hr: '₹5,499',
-    features: [
-      'AC',
-      'Pushback Seats',
-      'Music',
-      'GPS',
-      'Luggage Space',
-      'Mic',
-    ],
-    popular: true,
-    description:
-      'Perfect for large groups, corporate tours, and wedding transport. Comfortable pushback seats with ample luggage space.',
-  },
-  {
-    name: 'Mahindra Xylo',
-    type: 'MPV',
-    image:
-      'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=400',
-    seats: 7,
-    fuel: 'Diesel',
-    mileage: '14+ km/l',
-    pricePerKm: '₹14',
-    pricePerDay: '₹3,499',
-    price8hr: '₹2,799',
-    features: ['AC', 'Captain Seats', 'Music', 'GPS'],
-    popular: false,
-    description:
-      "A reliable 7-seater MPV at a competitive price. Great for medium groups exploring Odisha's tribal and coastal routes.",
-  },
-  {
-    name: 'Honda City',
-    type: 'Premium Sedan',
-    image:
-      'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: HondaAmaze,
     seats: 4,
     fuel: 'Petrol',
     mileage: '18+ km/l',
-    pricePerKm: '₹14',
-    pricePerDay: '₹3,299',
-    price8hr: '₹2,499',
-    features: ['AC', 'Leather Seats', 'Sunroof', 'GPS', 'Premium Audio'],
+    pricePerKm: '₹13',
+    pricePerDay: '₹2,600',
+    price8hr: '₹2,100',
+    features: ['AC', 'GPS', 'Large Boot', 'Music'],
     popular: false,
     description:
-      'Premium sedan for business travelers and VIP guests. Luxurious interiors with top-notch comfort for executive travel.',
+      'Smooth driving sedan with spacious interiors and excellent comfort.',
   },
-];
+
+  {
+    name: 'Toyota Etios',
+    type: 'Sedan',
+    image: ToyotaEtios,
+    seats: 4,
+    fuel: 'Diesel',
+    mileage: '22+ km/l',
+    pricePerKm: '₹14',
+    pricePerDay: '₹2,850',
+    price8hr: '₹2,200',
+    features: ['AC', 'GPS', 'Music', 'Large Boot'],
+    popular: false,
+    description:
+      'Reliable sedan for outstation travel and long-distance Odisha tours.',
+  },
+
+  // SUV CARS
+  {
+    name: 'Chevrolet Tavera',
+    type: 'SUV',
+    image: ChevroletTavera,
+    seats: 7,
+    fuel: 'Diesel',
+    mileage: '14+ km/l',
+    pricePerKm: '₹14',
+    pricePerDay: '₹2,950',
+    price8hr: '₹2,600',
+    features: ['AC', 'Extra Luggage', 'Music', 'GPS'],
+    popular: false,
+    description:
+      'Spacious SUV suitable for family tours and pilgrimage trips.',
+  },
+
+  {
+    name: 'Toyota Innova',
+    type: 'SUV',
+    image: ToyotaInnova,
+    seats: 7,
+    fuel: 'Diesel',
+    mileage: '15+ km/l',
+    pricePerKm: '₹17',
+    pricePerDay: '₹3,600',
+    price8hr: '₹3,000',
+    features: ['Captain Seats', 'AC', 'GPS', 'Music'],
+    popular: true,
+    description:
+      'Premium SUV for comfortable long-distance family travel in Odisha.',
+  },
+
+  {
+    name: 'Toyota Innova Crysta',
+    type: 'Luxury SUV',
+    image: ToyotaInnovaCrysta,
+    seats: 7,
+    fuel: 'Diesel',
+    mileage: '14+ km/l',
+    pricePerKm: '₹20',
+    pricePerDay: '₹4,500',
+    price8hr: '₹3,500',
+    features: [
+      'Captain Seats',
+      'Premium Interior',
+      'Entertainment',
+      'GPS',
+    ],
+    popular: true,
+    description:
+      'Luxury family vehicle with superior comfort for Odisha road trips.',
+  },
+
+  // LUXURY CARS
+  {
+    name: 'Mercedes CLA 200',
+    type: 'Luxury Sedan',
+    image: MercedesCLA200,
+    seats: 4,
+    fuel: 'Petrol',
+    mileage: '15+ km/l',
+    pricePerKm: '₹95',
+    pricePerDay: '₹15,000',
+    price8hr: '₹12,000',
+    features: ['Luxury Seats', 'Sunroof', 'Premium Audio', 'GPS'],
+    popular: true,
+    description:
+      'Premium luxury sedan for VIP guests, weddings, and executive travel.',
+  },
+
+  {
+    name: 'Audi A4',
+    type: 'Luxury Sedan',
+    image: AudiA4,
+    seats: 4,
+    fuel: 'Petrol',
+    mileage: '14+ km/l',
+    pricePerKm: '₹90',
+    pricePerDay: '₹15,000',
+    price8hr: '₹11,000',
+    features: ['Leather Seats', 'Premium Audio', 'GPS', 'AC'],
+    popular: true,
+    description:
+      'Executive luxury sedan with elegant interiors and smooth performance.',
+  },
+
+  {
+    name: 'Jaguar XF',
+    type: 'Luxury Sedan',
+    image: JaguarXF,
+    seats: 4,
+    fuel: 'Petrol',
+    mileage: '12+ km/l',
+    pricePerKm: '₹100',
+    pricePerDay: '₹25,000',
+    price8hr: '₹20,000',
+    features: ['Luxury Interior', 'Sunroof', 'Premium Audio', 'GPS'],
+    popular: true,
+    description:
+      'Ultra luxury sedan for elite business travel and weddings.',
+  },
+
+  // WINGER
+  {
+    name: '13 Seater Winger',
+    type: 'Mini Van',
+    image: SeaterWinger,
+    seats: 13,
+    fuel: 'Diesel',
+    mileage: '12+ km/l',
+    pricePerKm: '₹20',
+    pricePerDay: '₹4,200',
+    price8hr: '₹3,700',
+    features: ['Pushback Seats', 'Music', 'GPS', 'AC'],
+    popular: false,
+    description:
+      'Ideal for medium groups, corporate events, and Odisha sightseeing.',
+  },
+
+  {
+    name: '9 Seater Winger',
+    type: 'Mini Van',
+    image: SeaterWinger9,
+    seats: 9,
+    fuel: 'Diesel',
+    mileage: '13+ km/l',
+    pricePerKm: '₹20',
+    pricePerDay: '₹4,800',
+    price8hr: '₹4,000',
+    features: ['Pushback Seats', 'AC', 'Music', 'GPS'],
+    popular: false,
+    description:
+      'Comfortable mini van with pushback seating for family tours.',
+  },
+
+  // TEMPO TRAVELLER
+  {
+    name: '13 Seater Traveller',
+    type: 'Tempo Traveller',
+    image: SeaterTraveller13,
+    seats: 13,
+    fuel: 'Diesel',
+    mileage: '10+ km/l',
+    pricePerKm: '₹25',
+    pricePerDay: '₹6,000',
+    price8hr: '₹5,000',
+    features: ['Pushback Seats', 'GPS', 'Music', 'Luggage Space'],
+    popular: true,
+    description:
+      'Popular group vehicle for family trips, corporate tours, and events.',
+  },
+
+  {
+    name: '17 Seater Traveller',
+    type: 'Tempo Traveller',
+    image: SeaterTraveller17,
+    seats: 17,
+    fuel: 'Diesel',
+    mileage: '9+ km/l',
+    pricePerKm: '₹26',
+    pricePerDay: '₹6,300',
+    price8hr: '₹5,300',
+    features: ['Pushback Seats', 'Music', 'GPS', 'Charging Port'],
+    popular: true,
+    description:
+      'Spacious traveller for big groups and outstation Odisha tours.',
+  },
+
+  {
+    name: '25 Seater Traveller',
+    type: 'Luxury Tempo Traveller',
+    image: SeaterTraveller25,
+    seats: 25,
+    fuel: 'Diesel',
+    mileage: '8+ km/l',
+    pricePerKm: '₹38',
+    pricePerDay: '₹8,500',
+    price8hr: '₹7,000',
+    features: ['Luxury Pushback', 'LED TV', 'GPS', 'Music'],
+    popular: true,
+    description:
+      'Luxury traveller for weddings, group vacations, and corporate travel.',
+  },
+
+  // COACH / BUS
+  {
+    name: '36 Seater Bharat Benz Coach',
+    type: 'Luxury Bus',
+    image: BharatBenzCoach,
+    seats: 36,
+    fuel: 'Diesel',
+    mileage: '6+ km/l',
+    pricePerKm: '₹80',
+    pricePerDay: '₹20,000',
+    price8hr: '₹18,000',
+    features: ['Luxury Seats', 'AC', 'LED TV', 'GPS'],
+    popular: true,
+    description:
+      'Premium luxury coach for large groups, tours, and corporate events.',
+  },
+
+  {
+    name: '44 Seater Coach',
+    type: 'Luxury Bus',
+    image: CoachSeater44,
+    seats: 44,
+    fuel: 'Diesel',
+    mileage: '5+ km/l',
+    pricePerKm: '₹85',
+    pricePerDay: '₹23,000',
+    price8hr: '₹20,000',
+    features: ['AC', 'Luxury Seats', 'GPS', 'Entertainment'],
+    popular: false,
+    description:
+      'Large luxury coach for educational tours and corporate travel.',
+  },
+
+  {
+    name: 'Volvo 45 Seater AC Coach',
+    type: 'Volvo Bus',
+    image: Volvo45Seater,
+    seats: 45,
+    fuel: 'Diesel',
+    mileage: '5+ km/l',
+    pricePerKm: '₹110',
+    pricePerDay: '₹26,000',
+    price8hr: '₹22,000',
+    features: ['Volvo Comfort', 'WiFi', 'GPS', 'AC'],
+    popular: true,
+    description:
+      'Top-class Volvo AC coach with premium comfort for long-distance tours.',
+  },
+];  
 
 const serviceAreas = [
   'Bhubaneswar Airport Pickup/Drop',
