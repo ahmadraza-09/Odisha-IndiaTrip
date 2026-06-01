@@ -48,10 +48,10 @@ const legalLinks = [
 
 const socials = [
   { icon: FaFacebookF, href: '#', label: 'Facebook' },
-  { icon: FaInstagram, href: '#', label: 'Instagram' },
+  { icon: FaInstagram, href: 'https://www.instagram.com/odishaindiatrip', label: 'Instagram' },
   { icon: FaTwitter, href: '#', label: 'Twitter' },
-  { icon: FaYoutube, href: '#', label: 'YouTube' },
-  { icon: FaWhatsapp, href: '#', label: 'WhatsApp' },
+  { icon: FaYoutube, href: 'https://www.youtube.com/@odishaindiatripofficial', label: 'YouTube' },
+  { icon: FaWhatsapp, href: 'https://wa.me/message/YVEM7OYHYJLIH1', label: 'WhatsApp' },
 ];
 
 const Footer = () => {
@@ -90,6 +90,7 @@ const Footer = () => {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
+                  target='_blank'
                   className="w-9 h-9 rounded-lg bg-white/5 hover:bg-amber-500/20 border border-white/10 hover:border-amber-500/30 flex items-center justify-center transition-all duration-300"
                 >
                   <social.icon className="w-4 h-4 text-white/60 hover:text-amber-400" />
