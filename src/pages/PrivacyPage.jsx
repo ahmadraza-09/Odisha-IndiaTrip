@@ -6,10 +6,10 @@ const PrivacyPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Privacy Policy | Odisha IndiaTrip"
-        description="Read the Privacy Policy of Odisha IndiaTrip to understand how we collect, use, store, and protect your personal information for Odisha tour packages, hotel bookings, cab rentals, and travel services."
-        keywords="Privacy Policy Odisha IndiaTrip, Odisha travel privacy policy, Odisha tour data protection, hotel booking privacy Odisha, cab booking privacy policy, Odisha travel company privacy, Odisha tourism privacy policy, Odisha IndiaTrip data security"
-        url="https://odishaindiatrip.com/privacy-policy"
+        title="Privacy Policy | Odisha Indiatrip"
+        description="Read the Privacy Policy of Odisha Indiatrip to understand how we collect, use, store, and protect your personal information for Odisha tour packages, hotel bookings, cab rentals, and travel services."
+        keywords="Privacy Policy Odisha Indiatrip, Odisha travel privacy policy, Odisha tour data protection, hotel booking privacy Odisha, cab booking privacy policy, Odisha travel company privacy, Odisha tourism privacy policy, Odisha Indiatrip data security"
+        url="https://odishaIndiatrip.com/privacy-policy"
       />
       <div className="gradient-navy py-12">
         <div className="container-max px-4 sm:px-6 lg:px-8">
@@ -116,7 +116,7 @@ const PrivacyPage = () => {
                 <li>Withdraw consent for marketing communications at any time</li>
                 <li>Request a copy of your data in a machine-readable format</li>
               </ul>
-              <p className="mt-3">To exercise any of these rights, contact us at <a href="mailto:welcome@odishaindiatrip.com" className="text-amber-600 hover:underline">welcome@odishaindiatrip.com</a>. We will respond within 30 days.</p>
+              <p className="mt-3">To exercise any of these rights, contact us at <a href="mailto:welcome@odishaIndiatrip.com" className="text-amber-600 hover:underline">welcome@odishaIndiatrip.com</a>. We will respond within 30 days.</p>
             </section>
 
             <section>
@@ -135,7 +135,7 @@ const PrivacyPage = () => {
             </section>
 
             <section className="pt-6 border-t border-slate-200">
-              <p className="text-navy-500 text-sm">For privacy-related questions or requests, contact our Data Protection Officer at <a href="mailto:welcome@odishaindiatrip.com" className="text-amber-600 hover:underline">welcome@odishaindiatrip.com</a> or call <a href="tel:+919876543210" className="text-amber-600 hover:underline">+91 98765 43210</a>.</p>
+              <p className="text-navy-500 text-sm">For privacy-related questions or requests, contact our Data Protection Officer at <a href="mailto:welcome@odishaIndiatrip.com" className="text-amber-600 hover:underline">welcome@odishaIndiatrip.com</a> or call <a href="tel:+919876543210" className="text-amber-600 hover:underline">+91 98765 43210</a>.</p>
             </section>
           </div>
         </div>

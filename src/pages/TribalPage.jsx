@@ -53,7 +53,7 @@ const TribalPage = ({ onOpenInquiry }) => {
         title="Tribal Odisha Tour Packages | Tribal Culture Tours in Odisha"
         description="Explore authentic tribal tours in Odisha with indigenous village visits, weekly tribal markets, Dongria Kondh culture, Koraput tours, tribal art, forests, and heritage experiences."
         keywords="Tribal Odisha tour, Odisha tribal tour packages, Koraput tribal tour, Dongria Kondh tour, Odisha tribal culture, tribal villages Odisha, Odisha heritage tours, tribal market Odisha, Odisha culture trip, tribal tourism Odisha"
-        url="https://odishaindiatrip.com/tribal-tours"
+        url="https://odishaIndiatrip.com/tribal-tours"
       />
       {/* Page Header */}
       <div className="relative overflow-hidden">
@@ -241,6 +241,7 @@ const TribalPage = ({ onOpenInquiry }) => {
                     </Link>
 
                     <button
+                      name='Open Inquiry Form'
                       onClick={onOpenInquiry}
                       className="flex-1 btn-primary text-sm py-2.5"
                     >
@@ -260,7 +261,7 @@ const TribalPage = ({ onOpenInquiry }) => {
 
             <p className="text-navy-600 text-sm leading-relaxed">
               Tribal tours require special permits from the District
-              Administration. Odisha IndiaTrip handles all permissions and ensures
+              Administration. Odisha Indiatrip handles all permissions and ensures
               respectful, responsible tourism practices. Photography may be
               restricted in certain areas. Our local guides ensure cultural
               sensitivity at all times. Minimum 2 travelers required for tribal

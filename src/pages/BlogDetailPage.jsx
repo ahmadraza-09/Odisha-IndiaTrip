@@ -131,7 +131,7 @@ const BlogDetailPage = () => {
                   Share this article:
                 </span>
 
-                <button className="w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-100 flex items-center justify-center transition-colors">
+                <button name='share' className="w-9 h-9 rounded-lg bg-slate-100 hover:bg-amber-100 flex items-center justify-center transition-colors">
                   <Share2 className="w-4 h-4 text-navy-500" />
                 </button>
               </div>

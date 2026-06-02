@@ -66,6 +66,7 @@ const CityHotelsPage = () => {
 
                   <div className="flex gap-3">
                     <button
+                      name='Open Inquiry Form'
                       onClick={() => handleBookNow(hotel)}
                       className="flex-1 bg-amber-500 hover:bg-amber-600 text-white py-3 rounded-xl font-semibold transition"
                     >

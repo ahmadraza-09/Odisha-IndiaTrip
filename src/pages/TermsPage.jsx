@@ -6,10 +6,10 @@ const TermsPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Terms & Conditions | Odisha IndiaTrip"
-        description="Read the official Terms & Conditions of Odisha IndiaTrip for Odisha tour packages, hotel bookings, transportation services, payments, cancellations, tribal tours, and Jagannath Darshan travel services."
-        keywords="Odisha IndiaTrip terms, Odisha travel terms and conditions, Odisha tour booking policy, Jagannath tour conditions, Odisha DMC terms, Odisha travel company policies, Odisha hotel booking terms"
-        url="https://odishaindiatrip.com/terms-and-conditions"
+        title="Terms & Conditions | Odisha Indiatrip"
+        description="Read the official Terms & Conditions of Odisha Indiatrip for Odisha tour packages, hotel bookings, transportation services, payments, cancellations, tribal tours, and Jagannath Darshan travel services."
+        keywords="Odisha Indiatrip terms, Odisha travel terms and conditions, Odisha tour booking policy, Jagannath tour conditions, Odisha DMC terms, Odisha travel company policies, Odisha hotel booking terms"
+        url="https://odishaIndiatrip.com/terms-and-conditions"
       />
       <div className="gradient-navy py-12">
         <div className="container-max px-4 sm:px-6 lg:px-8">
@@ -40,14 +40,14 @@ const TermsPage = () => {
 
               <p>
                 These Terms and Conditions govern the relationship between Odisha
-                IndiaTrip ("Company", "we", "us", "our") and the customer ("you",
+                Indiatrip ("Company", "we", "us", "our") and the customer ("you",
                 "your") booking travel services through our website, phone,
                 email, or in person. By making a booking, you agree to be bound
                 by these terms.
               </p>
 
               <p>
-                Odisha IndiaTrip is a registered travel company based in
+                Odisha Indiatrip is a registered travel company based in
                 Bhubaneswar, Odisha, India. We operate as a Destination
                 Management Company (DMC) providing tour packages, cab rentals,
                 hotel bookings, and related travel services primarily in Odisha
@@ -192,7 +192,7 @@ const TermsPage = () => {
               </h2>
 
               <p>
-                Odisha IndiaTrip acts as an intermediary between the customer and
+                Odisha Indiatrip acts as an intermediary between the customer and
                 service providers (hotels, transport companies, restaurants,
                 monument authorities). While we carefully select our partners,
                 we are not liable for:
@@ -239,7 +239,7 @@ const TermsPage = () => {
               <p>
                 All content on our website — including text, images,
                 itineraries, logos, and design — is the intellectual property of
-                Odisha IndiaTrip and is protected under Indian copyright law.
+                Odisha Indiatrip and is protected under Indian copyright law.
                 Reproduction, distribution, or commercial use without written
                 permission is prohibited.
               </p>
@@ -276,10 +276,10 @@ const TermsPage = () => {
               <p className="text-navy-500 text-sm">
                 For questions about these terms, contact us at{' '}
                 <a
-                  href="mailto:welcome@odishaindiatrip.com"
+                  href="mailto:welcome@odishaIndiatrip.com"
                   className="text-amber-600 hover:underline"
                 >
-                  welcome@odishaindiatrip.com
+                  welcome@odishaIndiatrip.com
                 </a>{' '}
                 or{' '}
                 <a

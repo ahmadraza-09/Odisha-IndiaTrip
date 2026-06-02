@@ -226,6 +226,7 @@ const PackagesPage = ({ onOpenInquiry }) => {
                     </Link>
 
                     <button
+                      name='Open Inquiry Form'
                       onClick={onOpenInquiry}
                       className="flex-1 btn-primary text-sm py-2.5"
                     >

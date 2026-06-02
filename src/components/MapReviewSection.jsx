@@ -6,12 +6,12 @@ const MapReviewSection = ({ onOpenInquiry }) => {
           {/* Map */}
           <div className="overflow-hidden rounded-3xl shadow-xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.43655513259!2d77.1038883!3d28.646644499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x623bb31518f82eb1%3A0x5a5572c90d1e3670!2sOdisha%20IndiaTrip%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1780393610981!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.43655513259!2d77.1038883!3d28.646644499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x623bb31518f82eb1%3A0x5a5572c90d1e3670!2sOdisha%20Indiatrip%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1780393610981!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}
               loading="lazy"
-              title="Odisha IndiaTrip Location"
+              title="Odisha Indiatrip Location"
             />
           </div>
 
@@ -27,6 +27,7 @@ const MapReviewSection = ({ onOpenInquiry }) => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button
+                name="Open Inquiry"
                 onClick={onOpenInquiry}
                 className="px-8 py-4 rounded-full text-white font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 cursor-pointer"
               >

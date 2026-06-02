@@ -10,7 +10,7 @@ const SEO = ({
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    name: "Odisha IndiaTrip Pvt. Ltd.",
+    name: "Odisha Indiatrip Pvt. Ltd.",
     url: "https://odishaindiatrip.com",
     logo: "https://odishaindiatrip.com/logo.png",
     image: image,
@@ -56,7 +56,7 @@ const SEO = ({
       <meta name="twitter:image" content={image} />
 
       {/* Extra SEO */}
-      <meta name="author" content="Odisha IndiaTrip Pvt. Ltd." />
+      <meta name="author" content="Odisha Indiatrip Pvt. Ltd." />
       <meta name="theme-color" content="#0f172a" />
       <meta name="language" content="English" />
       <meta name="rating" content="general" />

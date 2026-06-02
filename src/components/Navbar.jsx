@@ -55,7 +55,7 @@ const Navbar = ({ onOpenInquiry }) => {
             <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center flex-shrink-0">
               <img
                 src={Logo}
-                alt="Odisha IndiaTrip"
+                alt="Odisha Indiatrip"
                 className="w-full h-full object-contain"
               />
             </div>
@@ -69,7 +69,7 @@ const Navbar = ({ onOpenInquiry }) => {
                     : 'text-white'
                 }`}
               >
-                Odisha IndiaTrip Pvt. Ltd.
+                Odisha Indiatrip Pvt. Ltd.
               </span>
 
               {/* Desktop Text */}
@@ -80,7 +80,7 @@ const Navbar = ({ onOpenInquiry }) => {
                     : 'text-white'
                 }`}
               >
-                Odisha IndiaTrip Pvt. Ltd.
+                Odisha Indiatrip Pvt. Ltd.
               </span>
 
               <span
@@ -119,6 +119,7 @@ const Navbar = ({ onOpenInquiry }) => {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <button
+              name='Open Inquiry Form'
               onClick={onOpenInquiry}
               className="btn-primary text-sm px-5 py-2.5"
             >
@@ -128,6 +129,7 @@ const Navbar = ({ onOpenInquiry }) => {
 
           {/* Mobile Toggle */}
           <button
+            name='Open Inquiry Form'
             onClick={() => setMobileOpen(!mobileOpen)}
             className={`lg:hidden p-2 rounded-lg transition-colors ${
               scrolled || !isHome
@@ -176,6 +178,7 @@ const Navbar = ({ onOpenInquiry }) => {
               </a>
 
               <button
+                name='Open Inquiry Form'
                 onClick={() => {
                   setMobileOpen(false);
                   onOpenInquiry();

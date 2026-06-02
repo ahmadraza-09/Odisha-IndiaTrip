@@ -6,9 +6,9 @@ const CancellationPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Cancellation Policy | Odisha IndiaTrip"
+        title="Cancellation Policy | Odisha Indiatrip"
         description="Read the Cancellation Policy of Odisha IndiaTrip for Odisha tour packages, hotel bookings, cab rentals, refund timelines, festival booking cancellations, and travel cancellation charges."
-        keywords="Cancellation Policy Odisha IndiaTrip, Odisha tour cancellation policy, Odisha hotel cancellation, cab booking cancellation Odisha, Odisha travel refund policy, Jagannath tour cancellation, Odisha package cancellation charges, Odisha trip cancellation"
+        keywords="Cancellation Policy Odisha Indiatrip, Odisha tour cancellation policy, Odisha hotel cancellation, cab booking cancellation Odisha, Odisha travel refund policy, Jagannath tour cancellation, Odisha package cancellation charges, Odisha trip cancellation"
         url="https://odishaindiatrip.com/cancellation-policy"
       />
       <div className="gradient-navy py-12">
@@ -281,7 +281,7 @@ const CancellationPage = () => {
 
             <section>
               <h2 className="font-display text-xl font-bold text-navy-900 mb-3">
-                Cancellation by Odisha IndiaTrip
+                Cancellation by Odisha Indiatrip
               </h2>
 
               <p>

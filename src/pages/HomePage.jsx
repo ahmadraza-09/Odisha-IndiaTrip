@@ -124,8 +124,8 @@ const Hero = () => {
       className="relative min-h-screen flex items-center overflow-hidden"
     >
       <SEO
-        title="Odisha Tour Packages & Travel Agency | Odisha IndiaTrip Pvt. Ltd."
-        description="Discover the best Odisha tour packages with Odisha IndiaTrip Pvt. Ltd. Explore Jagannath Puri, Konark Sun Temple, Chilika Lake, Bhubaneswar, beaches, wildlife, tribal tours, eco tourism, and cab rental services in Odisha."
+        title="Odisha Tour Packages & Travel Agency | Odisha Indiatrip Pvt. Ltd."
+        description="Discover the best Odisha tour packages with Odisha Indiatrip Pvt. Ltd. Explore Jagannath Puri, Konark Sun Temple, Chilika Lake, Bhubaneswar, beaches, wildlife, tribal tours, eco tourism, and cab rental services in Odisha."
         keywords="Odisha tour packages, Odisha tourism, Odisha travel agency, Puri tour package, Jagannath Puri tour, Konark tour, Chilika Lake tour, Odisha cab rental, Odisha holiday packages, Odisha sightseeing"
         url="https://odishaindiatrip.com/"
       />
@@ -154,6 +154,7 @@ const Hero = () => {
 
       {/* Navigation Arrows */}
       <button
+        name='prev'
         onClick={prev}
         className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all"
       >
@@ -161,6 +162,7 @@ const Hero = () => {
       </button>
 
       <button
+        name='next'
         onClick={next}
         className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all"
       >
@@ -278,6 +280,7 @@ const Hero = () => {
 
                 {/* Button */}
                 <button
+                  name='explore'
                   onClick={handleExplore} // 4. Fires route navigation exclusively
                   className="btn-primary rounded-xl py-3 text-sm"
                 >

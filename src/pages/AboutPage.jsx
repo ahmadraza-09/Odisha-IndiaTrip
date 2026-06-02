@@ -51,7 +51,7 @@ const team = [
   {
     name: 'Rajesh Patra',
     role: 'Founder & CEO',
-    desc: 'Born in Puri, Rajesh has spent 15 years in Odisha tourism. He founded Odisha IndiaTrip to give travelers the authentic experience that big aggregators cannot provide.',
+    desc: 'Born in Puri, Rajesh has spent 15 years in Odisha tourism. He founded Odisha Indiatrip to give travelers the authentic experience that big aggregators cannot provide.',
     image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
@@ -80,8 +80,8 @@ const AboutPage = () => {
     <>
     <SEO
     title="About Odisha IndiaTrip Pvt. Ltd. | Trusted Odisha Travel Agency"
-    description="Learn about Odisha IndiaTrip Pvt. Ltd., Odisha’s trusted travel agency offering Jagannath Puri tours, Odisha holiday packages, Chilika trips, tribal tours, family vacations, and local travel experiences."
-    keywords="about Odisha IndiaTrip, Odisha travel agency, Odisha tourism company, Puri travel agency, Odisha holiday packages, Odisha DMC, Jagannath tour operator, Odisha local travel experts, Odisha family trip, Odisha tourism"
+    description="Learn about Odisha Indiatrip Pvt. Ltd., Odisha’s trusted travel agency offering Jagannath Puri tours, Odisha holiday packages, Chilika trips, tribal tours, family vacations, and local travel experiences."
+    keywords="about Odisha Indiatrip, Odisha travel agency, Odisha tourism company, Puri travel agency, Odisha holiday packages, Odisha DMC, Jagannath tour operator, Odisha local travel experts, Odisha family trip, Odisha tourism"
     url="https://odishaindiatrip.com/about"
   />
     <div className="pt-24">
@@ -104,7 +104,7 @@ const AboutPage = () => {
             </span>
 
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
-              About Odisha IndiaTrip
+              About Odisha Indiatrip
             </h1>
 
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
@@ -129,7 +129,7 @@ const AboutPage = () => {
               </h2>
 
               <p className="text-navy-500 text-base leading-relaxed mb-4">
-                Odisha IndiaTrip was founded in 2015 with a simple belief: the best
+                Odisha Indiatrip was founded in 2015 with a simple belief: the best
                 way to experience Odisha is through the eyes of someone who
                 lives and breathes this land. We are not a marketplace that
                 resells someone else&apos;s tour. We are the operators on the ground —

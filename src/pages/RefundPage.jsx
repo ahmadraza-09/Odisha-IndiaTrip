@@ -6,10 +6,10 @@ const RefundPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Refund Policy | Odisha IndiaTrip"
-        description="Read the Refund Policy of Odisha IndiaTrip for tour packages, hotel bookings, cab rentals, cancellations, refund timelines, force majeure policies, and payment refund procedures in Odisha."
-        keywords="Refund Policy Odisha IndiaTrip, Odisha tour refund policy, hotel booking refund Odisha, cab booking cancellation Odisha, Odisha travel refunds, Odisha tour cancellation refund, Jagannath tour refund policy, Odisha hotel refund, Odisha IndiaTrip cancellation"
-        url="https://odishaindiatrip.com/refund-policy"
+        title="Refund Policy | Odisha Indiatrip"
+        description="Read the Refund Policy of Odisha Indiatrip for tour packages, hotel bookings, cab rentals, cancellations, refund timelines, force majeure policies, and payment refund procedures in Odisha."
+        keywords="Refund Policy Odisha Indiatrip, Odisha tour refund policy, hotel booking refund Odisha, cab booking cancellation Odisha, Odisha travel refunds, Odisha tour cancellation refund, Jagannath tour refund policy, Odisha hotel refund, Odisha Indiatrip cancellation"
+        url="https://odishaIndiatrip.com/refund-policy"
       />
       <div className="gradient-navy py-12">
         <div className="container-max px-4 sm:px-6 lg:px-8">
@@ -134,12 +134,12 @@ const RefundPage = () => {
 
             <section>
               <h2 className="font-display text-xl font-bold text-navy-900 mb-3">7. Disputes</h2>
-              <p>If you believe a refund has been incorrectly calculated or not processed, please contact us at <a href="mailto:welcome@odishaindiatrip.com" className="text-amber-600 hover:underline">welcome@odishaindiatrip.com</a> with your booking reference number and details. We will investigate and respond within 5 business days.</p>
+              <p>If you believe a refund has been incorrectly calculated or not processed, please contact us at <a href="mailto:welcome@odishaIndiatrip.com" className="text-amber-600 hover:underline">welcome@odishaIndiatrip.com</a> with your booking reference number and details. We will investigate and respond within 5 business days.</p>
               <p className="mt-3">If the dispute cannot be resolved through our customer service team, you may escalate to our management. The final decision will be communicated in writing within 15 business days of escalation.</p>
             </section>
 
             <section className="pt-6 border-t border-slate-200">
-              <p className="text-navy-500 text-sm">For refund requests, email <a href="mailto:welcome@odishaindiatrip.com" className="text-amber-600 hover:underline">welcome@odishaindiatrip.com</a> or call <a href="tel:+919958826437" className="text-amber-600 hover:underline">+91 99588 26437</a>. Please include your booking reference number for faster processing.</p>
+              <p className="text-navy-500 text-sm">For refund requests, email <a href="mailto:welcome@odishaIndiatrip.com" className="text-amber-600 hover:underline">welcome@odishaIndiatrip.com</a> or call <a href="tel:+919958826437" className="text-amber-600 hover:underline">+91 99588 26437</a>. Please include your booking reference number for faster processing.</p>
             </section>
           </div>
         </div>

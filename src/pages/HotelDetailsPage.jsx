@@ -76,6 +76,7 @@ const HotelDetailsPage = () => {
             </div>
 
             <button
+              name='Open Inquiry Form'
               onClick={handleBookNow}
               className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-2xl font-semibold transition"
             >

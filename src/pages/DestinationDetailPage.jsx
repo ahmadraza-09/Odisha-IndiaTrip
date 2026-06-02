@@ -140,6 +140,7 @@ const DestinationDetailPage = ({ onOpenInquiry }) => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
+                name='Open Inquiry Form'
                 onClick={onOpenInquiry}
                 className="btn-secondary text-sm"
               >

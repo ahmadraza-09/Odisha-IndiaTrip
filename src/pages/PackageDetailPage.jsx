@@ -305,6 +305,7 @@ const PackageDetailPage = ({ onOpenInquiry }) => {
                   </div>
 
                   <button
+                    name='Open Inquiry Form'
                     onClick={onOpenInquiry}
                     className="btn-primary w-full py-3.5 text-sm mb-3"
                   >

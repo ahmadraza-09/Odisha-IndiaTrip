@@ -154,6 +154,7 @@ const InquiryForm = ({ isOpen, onClose }) => {
           </div>
 
           <button
+            name='Close Form'
             onClick={handleClose}
             className="w-8 h-8 rounded-lg bg-navy-900/10 hover:bg-navy-900/20 flex items-center justify-center transition-colors"
           >
@@ -176,6 +177,7 @@ const InquiryForm = ({ isOpen, onClose }) => {
             </p>
 
             <button
+              name='Done'
               onClick={handleClose}
               className="btn-primary text-sm"
             >
@@ -332,6 +334,7 @@ const InquiryForm = ({ isOpen, onClose }) => {
 
             {/* Submit */}
             <button
+              name='Submit'
               type="submit"
               disabled={loading}
               className="btn-primary w-full py-3.5 text-sm mt-2 disabled:opacity-50"

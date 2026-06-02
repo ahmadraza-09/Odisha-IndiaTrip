@@ -242,6 +242,7 @@ const EcoTourismPage = ({ onOpenInquiry }) => {
                     </div>
 
                     <button
+                      name='Open Inquiry Form'
                       onClick={onOpenInquiry}
                       className="btn-primary text-sm py-2 px-4"
                     >
@@ -265,6 +266,7 @@ const EcoTourismPage = ({ onOpenInquiry }) => {
             </p>
 
             <button
+              name='Open Inquiry Form'
               onClick={onOpenInquiry}
               className="btn-primary text-sm"
             >

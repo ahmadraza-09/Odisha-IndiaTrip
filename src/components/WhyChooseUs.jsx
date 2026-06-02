@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 reveal">
           <span className="inline-block px-4 py-1.5 rounded-full bg-amber-500/15 text-amber-400 text-sm font-semibold mb-4">
-            Why Odisha IndiaTrip
+            Why Odisha Indiatrip
           </span>
 
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">

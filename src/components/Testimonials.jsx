@@ -32,7 +32,7 @@ const testimonials = [
     name: 'Rahul Kumar',
     location: 'Uttar Pradesh',
     text:
-      'As a B2B partner, working with Odisha IndiaTrip has been seamless. Their on-ground execution, vehicle quality, and hotel selections are consistently excellent.',
+      'As a B2B partner, working with Odisha Indiatrip has been seamless. Their on-ground execution, vehicle quality, and hotel selections are consistently excellent.',
     rating: 5,
     tour: 'B2B Partner',
     image: MaleAvatar,
@@ -159,6 +159,7 @@ const Testimonials = () => {
         >
           {/* Navigation */}
           <button
+            name='prev'
             onClick={prev}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-10 w-10 h-10 rounded-full bg-white shadow-lg border border-slate-200 flex items-center justify-center text-navy-600 hover:bg-navy-900 hover:text-white transition-all duration-300"
           >
@@ -166,6 +167,7 @@ const Testimonials = () => {
           </button>
 
           <button
+            name='next'
             onClick={next}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-10 w-10 h-10 rounded-full bg-white shadow-lg border border-slate-200 flex items-center justify-center text-navy-600 hover:bg-navy-900 hover:text-white transition-all duration-300"
           >
@@ -219,6 +221,7 @@ const Testimonials = () => {
           <div className="flex justify-center gap-2 mt-8">
             {testimonials.map((_, i) => (
               <button
+                
                 key={i}
                 onClick={() => setCurrent(i)}
                 className={`h-2 rounded-full transition-all duration-500 ${

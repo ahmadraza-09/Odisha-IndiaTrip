@@ -49,7 +49,7 @@ const legalLinks = [
 const socials = [
   { icon: FaFacebookF, href: 'https://www.facebook.com/share/1DFcfx5ddP/', label: 'Facebook' },
   { icon: FaInstagram, href: 'https://www.instagram.com/odishaindiatrip', label: 'Instagram' },
-  { icon: FaTwitter, href: '#', label: 'Twitter' },
+  { icon: FaTwitter, href: 'https://x.com/Odishaindiatrip', label: 'Twitter' },
   { icon: FaYoutube, href: 'https://www.youtube.com/@odishaindiatripofficial', label: 'YouTube' },
   { icon: FaWhatsapp, href: 'https://wa.me/message/YVEM7OYHYJLIH1', label: 'WhatsApp' },
 ];
@@ -69,7 +69,7 @@ const Footer = () => {
 
               <div>
                 <span className="font-display font-bold text-xl text-white whitespace-nowrap">
-                  Odisha IndiaTrip Pvt. Ltd.
+                  Odisha Indiatrip Pvt. Ltd.
                 </span>
 
                 <p className="text-[10px] tracking-widest uppercase text-amber-400">
@@ -79,7 +79,7 @@ const Footer = () => {
             </Link>
 
             <p className="text-white/50 text-sm leading-relaxed mb-5">
-              Odisha IndiaTrip Pvt. Ltd. is a Destination Management
+              Odisha Indiatrip Pvt. Ltd. is a Destination Management
               Company offering authentic, handcrafted travel experiences across
               the soul of Incredible India — Odisha.
             </p>
@@ -192,7 +192,7 @@ const Footer = () => {
         {/* Legal Links */}
         <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-xs">
-            &copy; {new Date().getFullYear()} Odisha IndiaTrip Pvt. Ltd. All rights reserved.
+            &copy; {new Date().getFullYear()} Odisha Indiatrip Pvt. Ltd. All rights reserved.
           </p>
 
           <div className="flex items-center gap-4">

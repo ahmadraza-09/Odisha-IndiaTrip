@@ -16,6 +16,7 @@ const CTABanner = ({ onOpenInquiry }) => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
+              name='Get Free Quote'
               onClick={onOpenInquiry}
               className="btn-secondary px-8 py-3.5 text-sm"
             >
