@@ -47,7 +47,7 @@ const legalLinks = [
 ];
 
 const socials = [
-  { icon: FaFacebookF, href: '#', label: 'Facebook' },
+  { icon: FaFacebookF, href: 'https://www.facebook.com/share/1DFcfx5ddP/', label: 'Facebook' },
   { icon: FaInstagram, href: 'https://www.instagram.com/odishaindiatrip', label: 'Instagram' },
   { icon: FaTwitter, href: '#', label: 'Twitter' },
   { icon: FaYoutube, href: 'https://www.youtube.com/@odishaindiatripofficial', label: 'YouTube' },
