@@ -42,6 +42,7 @@ import HotelsPage from './pages/HotelsPage';
 import CityHotelsPage from './pages/CityHotelsPage';
 import HotelDetailsPage from './pages/HotelDetailsPage';
 import FAQPage from './pages/FAQPage';
+import MapReviewSection from './components/MapReviewSection';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -101,6 +102,7 @@ const AppContent = () => {
               <TourPackages onOpenInquiry={openInquiry} />
               <WhyChooseUs />
               <Testimonials />
+              <MapReviewSection onOpenInquiry={openInquiry}/>
               <CTABanner onOpenInquiry={openInquiry} />
             </>
           }
