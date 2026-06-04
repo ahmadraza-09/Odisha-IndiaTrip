@@ -79,7 +79,7 @@ const AboutPage = () => {
   return (
     <>
     <SEO
-    title="About Odisha IndiaTrip Pvt. Ltd. | Trusted Odisha Travel Agency"
+    title="About Odisha Indiatrip Pvt. Ltd. | Trusted Odisha DMC Travel Agency"
     description="Learn about Odisha Indiatrip Pvt. Ltd., Odisha’s trusted travel agency offering Jagannath Puri tours, Odisha holiday packages, Chilika trips, tribal tours, family vacations, and local travel experiences."
     keywords="about Odisha Indiatrip, Odisha travel agency, Odisha tourism company, Puri travel agency, Odisha holiday packages, Odisha DMC, Jagannath tour operator, Odisha local travel experts, Odisha family trip, Odisha tourism"
     url="https://odishaindiatrip.com/about"

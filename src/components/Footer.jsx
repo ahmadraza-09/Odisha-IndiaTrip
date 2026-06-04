@@ -29,14 +29,13 @@ const quickLinks = [
 ];
 
 const destinations = [
-  'Puri Jagannath Temple',
-  'Konark Sun Temple',
-  'Chilika Lake',
-  'Bhubaneswar',
-  'Gopalpur Beach',
-  'Bhitarkanika',
-  'Simlipal',
-  'Tribal Odisha',
+  { label: 'Puri', href: '/destinations/puri' },
+  { label: 'Bhubaneswar', href: '/destinations/bhubaneswar' },
+  { label: 'Konark', href: '/destinations/konark' },
+  { label: 'Kolkata', href: '/destinations/kolkata' },
+  { label: 'Deoghar', href: '/destinations/deoghar' },
+  { label: 'Cuttack', href: '/destinations/cuttack' },
+  { label: 'Ganga Sagar', href: '/destinations/ganga-sagar' },
 ];
 
 const legalLinks = [
@@ -127,13 +126,13 @@ const Footer = () => {
 
             <ul className="space-y-2.5">
               {destinations.map((dest) => (
-                <li key={dest}>
-                  <a
-                    href="#"
+                <li key={dest.label}>
+                  <Link
+                    to={dest.href}
                     className="text-white/50 hover:text-amber-400 text-sm transition-colors duration-300"
                   >
-                    {dest}
-                  </a>
+                    {dest.label}
+                  </Link>
                 </li>
               ))}
             </ul>

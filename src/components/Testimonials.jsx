@@ -14,7 +14,7 @@ const testimonials = [
     name: 'Rajesh Sharma',
     location: 'Mumbai',
     text:
-      'The Puri Jagannath Darshan package was beyond our expectations. The local guide knew every story behind the temple. Truly a spiritual experience we will never forget.',
+      'The Puri Jagannath Darshan package with Odisha Indiatrip Pvt. Ltd. was beyond our expectations. As one of the best Odisha tour operators, they provided excellent arrangements and a knowledgeable local guide who knew every story behind the temple. Truly a spiritual experience we will never forget.',
     rating: 5,
     tour: 'Puri Jagannath Darshan',
     image: MaleAvatar,
@@ -23,7 +23,7 @@ const testimonials = [
     name: 'Priya Menon',
     location: 'Bangalore',
     text:
-      'The Tribal Odisha tour opened our eyes to a completely different world. The weekly haats, the Dongria Kondh villages — it was raw, real, and deeply moving.',
+      'The Tribal Odisha tour organized by Odisha Indiatrip Pvt. Ltd. opened our eyes to a completely different world. The weekly haats and Dongria Kondh villages were raw, real, and deeply moving. If you are looking for an authentic Odisha travel package, I highly recommend them.',
     rating: 5,
     tour: 'Tribal Odisha Expedition',
     image: FemaleAvatar,
@@ -32,7 +32,7 @@ const testimonials = [
     name: 'Rahul Kumar',
     location: 'Uttar Pradesh',
     text:
-      'As a B2B partner, working with Odisha Indiatrip has been seamless. Their on-ground execution, vehicle quality, and hotel selections are consistently excellent.',
+      'As a B2B partner, working with Odisha Indiatrip Pvt. Ltd. has been seamless. Their on-ground execution, vehicle quality, Odisha hotel bookings, and tour management services are consistently excellent. A reliable Destination Management Company in Odisha.',
     rating: 5,
     tour: 'B2B Partner',
     image: MaleAvatar,
@@ -41,7 +41,7 @@ const testimonials = [
     name: 'Anita Desai',
     location: 'Delhi',
     text:
-      'The Chilika boat ride at sunset was magical. We spotted dolphins and migratory birds. The eco retreat stay was the perfect blend of nature and comfort.',
+      'The Chilika boat ride at sunset arranged by Odisha Indiatrip Pvt. Ltd. was magical. We spotted dolphins and migratory birds, and the eco-retreat stay was the perfect blend of nature and comfort. One of the best Odisha tour packages we have experienced.',
     rating: 5,
     tour: 'Chilika Bird Watching',
     image: FemaleAvatar,
@@ -50,7 +50,7 @@ const testimonials = [
     name: 'Sanjay Singh',
     location: 'Noida',
     text:
-      'The Bhitarkanika wildlife tour was a once-in-a-lifetime experience. Seeing saltwater crocodiles in their natural habitat from a boat was absolutely thrilling.',
+      'The Bhitarkanika wildlife tour with Odisha Indiatrip Pvt. Ltd. was a once-in-a-lifetime experience. Seeing saltwater crocodiles in their natural habitat from a boat was absolutely thrilling. Their Odisha wildlife tour planning and local support were outstanding.',
     rating: 5,
     tour: 'Bhitarkanika Wildlife Tour',
     image: MaleAvatar,
@@ -59,7 +59,7 @@ const testimonials = [
     name: 'Sunita Patel',
     location: 'Ahmedabad',
     text:
-      'We booked the Golden Triangle package for our family. The kids loved the beach, the elders loved the temples, and we all loved the food. Perfect family trip!',
+      'We booked the Golden Triangle of Odisha package through Odisha Indiatrip Pvt. Ltd. for our family. The kids loved the beaches, the elders loved the temples, and we all loved the local cuisine. This is one of the best family tour packages in Odisha.',
     rating: 5,
     tour: 'Golden Triangle of Odisha',
     image: FemaleAvatar,

@@ -124,7 +124,7 @@ const Hero = () => {
       className="relative min-h-screen flex items-center overflow-hidden"
     >
       <SEO
-        title="Odisha Tour Packages & Travel Agency | Odisha Indiatrip Pvt. Ltd."
+        title="Best DMC Odisha Tour Packages & Travel Agency | Odisha Indiatrip Pvt. Ltd."
         description="Discover the best Odisha tour packages with Odisha Indiatrip Pvt. Ltd. Explore Jagannath Puri, Konark Sun Temple, Chilika Lake, Bhubaneswar, beaches, wildlife, tribal tours, eco tourism, and cab rental services in Odisha."
         keywords="Odisha tour packages, Odisha tourism, Odisha travel agency, Puri tour package, Jagannath Puri tour, Konark tour, Chilika Lake tour, Odisha cab rental, Odisha holiday packages, Odisha sightseeing"
         url="https://odishaindiatrip.com/"

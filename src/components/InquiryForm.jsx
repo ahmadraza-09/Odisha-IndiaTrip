@@ -229,7 +229,7 @@ const InquiryForm = ({ isOpen, onClose }) => {
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => handleChange('phone', e.target.value)}
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 99588 26437"
                     className={`w-full pl-10 pr-4 py-3 bg-slate-50 border rounded-xl text-sm ${
                       errors.phone
                         ? 'border-red-400'

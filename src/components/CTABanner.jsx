@@ -25,7 +25,7 @@ const CTABanner = ({ onOpenInquiry }) => {
             </button>
 
             <a
-              href="tel:+919876543210"
+              href="tel:+919958826437"
               className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-white/20 hover:bg-white/30 text-navy-900 font-semibold rounded-lg transition-all duration-300 text-sm"
             >
               <Phone className="w-4 h-4" />
