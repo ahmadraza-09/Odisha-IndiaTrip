@@ -11,6 +11,7 @@ import {
   Phone,
   CheckCircle,
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 import HundaiXcent from '../assets/vehicle/hundia-xcent.webp'
 import SwiftDzire from '../assets/vehicle/swift-desire.avif'
@@ -333,7 +334,7 @@ const vehicles = [
     description:
       'Top-class Volvo AC coach with premium comfort for long-distance tours.',
   },
-];  
+];
 
 const serviceAreas = [
   'Bhubaneswar Airport Pickup/Drop',
@@ -375,8 +376,8 @@ const CabRentalPage = ({ onOpenInquiry }) => {
   return (
     <div className="pt-24">
       <SEO
-        title="Cab Rental in Odisha | Taxi Service in Puri, Bhubaneswar & Cuttack"
-        description="Book reliable cab rental services in Odisha with professional drivers and comfortable vehicles. Available for Bhubaneswar airport transfer, Puri sightseeing, Jagannath Temple visits, Chilika Lake tours, family trips, and outstation travel."
+        title="Cab Rental in Odisha | Taxi Service | Odisha Indiatrip"
+        description="Book reliable cab rental services in Odisha with professional drivers and comfortable vehicles. Available for Bhubaneswar airport transfers, Puri sightseeing, Jagannath Temple visits, Chilika Lake tours, family trips, and outstation travel."
         keywords="cab rental Odisha, taxi service Odisha, Bhubaneswar cab booking, Puri taxi service, Odisha car rental, airport taxi Bhubaneswar, Jagannath Puri cab, Odisha tour cab, outstation taxi Odisha, Odisha travel taxi"
         url="https://odishaindiatrip.com/cab-rentals"
       />
@@ -583,6 +584,49 @@ const CabRentalPage = ({ onOpenInquiry }) => {
             >
               Get Custom Quote
             </button>
+          </div>
+        </div>
+      </div>
+      {/* CTA */}
+      <div className="gradient-amber py-16">
+        <div className="container-max px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-3xl font-bold text-navy-900 mb-4">
+            Ready to Experience the Real Odisha?
+          </h2>
+
+          <p className="text-navy-800/70 text-lg max-w-xl mx-auto mb-8">
+            Let our local experts craft your perfect itinerary. No templates, no
+            compromises — just the Odisha we know and love.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              to="/tour-packages"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Explore Tour Packages
+            </Link>
+
+            <Link
+              to="/hotels"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              View Hotels
+            </Link>
+
+            <Link
+              to="/eco-tourism"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Eco Tourism
+            </Link>
+
+            <a
+              href="tel:+919958826437"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Call Us: +91 99588 26437
+            </a>
           </div>
         </div>
       </div>

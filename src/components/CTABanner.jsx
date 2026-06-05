@@ -1,4 +1,5 @@
 import { Phone, MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CTABanner = ({ onOpenInquiry }) => {
   return (
@@ -30,6 +31,35 @@ const CTABanner = ({ onOpenInquiry }) => {
             >
               <Phone className="w-4 h-4" />
               Call Us Now
+            </a>
+          </div>
+            <div className="flex flex-wrap justify-center gap-4 flex-col sm:flex-row items-center pt-10">
+            <Link
+              to="/tour-packages"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Explore Tour Packages
+            </Link>
+
+            <Link
+              to="/hotels"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              View Hotels
+            </Link>
+
+            <Link
+              to="/eco-tourism"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Eco Tourism
+            </Link>
+
+            <a
+              href="tel:+919958826437"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Call Us: +91 99588 26437
             </a>
           </div>
         </div>

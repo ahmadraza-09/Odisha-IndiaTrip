@@ -54,7 +54,7 @@ const BlogPage = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Odisha Travel Blog | Odisha Tourism Guides, Tips & Travel Stories"
+        title="Odisha Travel Blog | Guides, Tips & Stories"
         description="Explore Odisha travel blogs, destination guides, Jagannath Puri travel tips, Chilika Lake tours, Odisha culture, beaches, wildlife, festivals, food, and local travel experiences."
         keywords="Odisha travel blog, Odisha tourism blog, Puri travel guide, Jagannath Puri blog, Odisha beaches, Chilika Lake travel, Odisha culture, Odisha travel tips, Odisha tourism guide, Odisha travel stories"
         url="https://odishaindiatrip.com/blog"
@@ -85,11 +85,10 @@ const BlogPage = () => {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-300 ${
-                    activeCategory === cat
+                  className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-300 ${activeCategory === cat
                       ? 'bg-navy-900 text-white shadow-md'
                       : 'bg-white text-navy-600 hover:bg-navy-50 border border-slate-200'
-                  }`}
+                    }`}
                 >
                   {cat}
                 </button>
@@ -221,6 +220,49 @@ const BlogPage = () => {
               </p>
             </div>
           )}
+        </div>
+      </div>
+      {/* CTA */}
+      <div className="gradient-amber py-16">
+        <div className="container-max px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-3xl font-bold text-navy-900 mb-4">
+            Ready to Experience the Real Odisha?
+          </h2>
+
+          <p className="text-navy-800/70 text-lg max-w-xl mx-auto mb-8">
+            Let our local experts craft your perfect itinerary. No templates, no
+            compromises — just the Odisha we know and love.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              to="/tour-packages"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Explore Tour Packages
+            </Link>
+
+            <Link
+              to="/hotels"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              View Hotels
+            </Link>
+
+            <Link
+              to="/eco-tourism"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Eco Tourism
+            </Link>
+
+            <a
+              href="tel:+919958826437"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Call Us: +91 99588 26437
+            </a>
+          </div>
         </div>
       </div>
     </div>

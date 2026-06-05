@@ -124,8 +124,8 @@ const Hero = () => {
       className="relative min-h-screen flex items-center overflow-hidden"
     >
       <SEO
-        title="Best DMC Odisha Tour Packages & Travel Agency | Odisha Indiatrip Pvt. Ltd."
-        description="Discover the best Odisha tour packages with Odisha Indiatrip Pvt. Ltd. Explore Jagannath Puri, Konark Sun Temple, Chilika Lake, Bhubaneswar, beaches, wildlife, tribal tours, eco tourism, and cab rental services in Odisha."
+        title="Odisha DMC & Travel Agency | Odisha Indiatrip Pvt. Ltd."
+        description="Discover Odisha tour packages with Odisha Indiatrip. Visit Jagannath Puri, Konark Sun Temple, Chilika Lake, Bhubaneswar, beaches, wildlife sanctuaries, tribal villages, eco retreats, and cab rental services across Odisha."
         keywords="Odisha tour packages, Odisha tourism, Odisha travel agency, Puri tour package, Jagannath Puri tour, Konark tour, Chilika Lake tour, Odisha cab rental, Odisha holiday packages, Odisha sightseeing"
         url="https://odishaindiatrip.com/"
       />
@@ -133,9 +133,8 @@ const Hero = () => {
       {heroSlides.map((s, i) => (
         <div
           key={i}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            i === current ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'
+            }`}
         >
           <img
             src={s.image}
@@ -175,11 +174,10 @@ const Hero = () => {
           <button
             key={i}
             onClick={() => goTo(i)}
-            className={`h-1.5 rounded-full transition-all duration-500 ${
-              i === current
+            className={`h-1.5 rounded-full transition-all duration-500 ${i === current
                 ? 'w-8 bg-amber-400'
                 : 'w-4 bg-white/30 hover:bg-white/50'
-            }`}
+              }`}
           />
         ))}
       </div>

@@ -25,6 +25,7 @@ const quickLinks = [
   { label: 'Cab Rentals', href: '/cab-rentals' },
   { label: 'Eco Tourism', href: '/eco-tourism' },
   { label: 'Blog', href: '/blog' },
+  { label: 'Contact', href: '/contact' },
   { label: 'FAQ', href: '/faq' },
 ];
 

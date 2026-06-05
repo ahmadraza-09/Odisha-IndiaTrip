@@ -43,6 +43,7 @@ import CityHotelsPage from './pages/CityHotelsPage';
 import HotelDetailsPage from './pages/HotelDetailsPage';
 import FAQPage from './pages/FAQPage';
 import MapReviewSection from './components/MapReviewSection';
+import ContactPage from './pages/ContactPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -112,6 +113,13 @@ const AppContent = () => {
           path="/packages"
           element={
             <PackagesPage onOpenInquiry={openInquiry} />
+          }
+        />
+
+        <Route
+          path="/contact"
+          element={
+            <ContactPage />
           }
         />
 

@@ -47,7 +47,7 @@ const PackagesPage = ({ onOpenInquiry }) => {
   return (
     <div className="pt-24">
       <SEO
-        title="Odisha Tour Packages | Puri, Konark, Chilika & Odisha Holiday Tours"
+        title="Odisha Tour Packages & Holiday Tours | Odisha Indiatrip"
         description="Explore the best Odisha tour packages including Jagannath Puri tours, Konark Sun Temple, Chilika Lake, wildlife, tribal culture, beaches, heritage, eco tourism, and customized Odisha holiday packages."
         keywords="Odisha tour packages, Odisha holiday packages, Puri tour package, Konark tour package, Chilika Lake tour, Odisha travel packages, Odisha tourism, Odisha sightseeing, Odisha family tour, Odisha vacation packages"
         url="https://odishaindiatrip.com/packages"
@@ -77,11 +77,10 @@ const PackagesPage = ({ onOpenInquiry }) => {
                 <button
                   key={cat.key}
                   onClick={() => setActiveCategory(cat.key)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                    activeCategory === cat.key
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${activeCategory === cat.key
                       ? 'bg-navy-900 text-white shadow-md'
                       : 'bg-white text-navy-600 hover:bg-navy-50 border border-slate-200'
-                  }`}
+                    }`}
                 >
                   {cat.label}
                 </button>
@@ -170,11 +169,10 @@ const PackagesPage = ({ onOpenInquiry }) => {
                     {includeIcons.map((item) => (
                       <div
                         key={item.key}
-                        className={`flex items-center gap-1 text-xs ${
-                          pkg.includes[item.key]
+                        className={`flex items-center gap-1 text-xs ${pkg.includes[item.key]
                             ? 'text-emerald-600'
                             : 'text-slate-300'
-                        }`}
+                          }`}
                       >
                         <item.icon className="w-3.5 h-3.5" />
                         <span className="font-medium">{item.label}</span>
@@ -211,7 +209,7 @@ const PackagesPage = ({ onOpenInquiry }) => {
                           parseInt(
                             pkg.originalPrice.replace(/,/g, '')
                           )) *
-                          100
+                        100
                       )}
                       %
                     </div>
@@ -245,6 +243,49 @@ const PackagesPage = ({ onOpenInquiry }) => {
               </p>
             </div>
           )}
+        </div>
+      </div>
+      {/* CTA */}
+      <div className="gradient-amber py-16">
+        <div className="container-max px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-display text-3xl font-bold text-navy-900 mb-4">
+            Ready to Experience the Real Odisha?
+          </h2>
+
+          <p className="text-navy-800/70 text-lg max-w-xl mx-auto mb-8">
+            Let our local experts craft your perfect itinerary. No templates, no
+            compromises — just the Odisha we know and love.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              to="/tour-packages"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Explore Tour Packages
+            </Link>
+
+            <Link
+              to="/hotels"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              View Hotels
+            </Link>
+
+            <Link
+              to="/eco-tourism"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Eco Tourism
+            </Link>
+
+            <a
+              href="tel:+919958826437"
+              className="btn-secondary px-8 py-3.5 text-sm"
+            >
+              Call Us: +91 99588 26437
+            </a>
+          </div>
         </div>
       </div>
     </div>
