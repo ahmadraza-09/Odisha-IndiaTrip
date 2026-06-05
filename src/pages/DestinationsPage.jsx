@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { destinations } from '../data/content';
 import SEO from '../components/SEO'
-import { Link } from 'react-router-dom';
 
 const DestinationsPage = () => {
   return (
