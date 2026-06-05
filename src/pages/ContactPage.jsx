@@ -382,97 +382,47 @@ const ContactPage = () => {
 
                 </div>
             </div>
-            <div className="mt-12 bg-gradient-to-r from-amber-50 to-orange-50 rounded-3xl p-8 border border-amber-100">
-                <div className="text-center mb-8">
-                    <h3 className="text-3xl font-bold text-slate-900 mb-3">
-                        Explore More Odisha Experiences
-                    </h3>
+            {/* CTA */}
+            <div className="gradient-amber py-16">
+                <div className="container-max px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="font-display text-3xl font-bold text-navy-900 mb-4">
+                        Ready to Experience the Real Odisha?
+                    </h2>
 
-                    <p className="text-slate-600 max-w-2xl mx-auto">
-                        Discover our most popular Odisha tour packages, luxury hotels,
-                        cab services, and spiritual journeys to make your trip memorable.
+                    <p className="text-navy-800/70 text-lg max-w-xl mx-auto mb-8">
+                        Let our local experts craft your perfect itinerary. No templates, no
+                        compromises — just the Odisha we know and love.
                     </p>
-                </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div className="flex flex-wrap justify-center gap-4">
+                        <Link
+                            to="/tour-packages"
+                            className="btn-secondary px-8 py-3.5 text-sm"
+                        >
+                            Explore Tour Packages
+                        </Link>
 
-                    <Link
-                        to="/tour-packages"
-                        className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                    >
-                        <div className="w-14 h-14 rounded-xl bg-amber-100 flex items-center justify-center mb-4">
-                            🌍
-                        </div>
+                        <Link
+                            to="/hotels"
+                            className="btn-secondary px-8 py-3.5 text-sm"
+                        >
+                            View Hotels
+                        </Link>
 
-                        <h4 className="font-bold text-lg text-slate-900 mb-2">
-                            Tour Packages
-                        </h4>
+                        <Link
+                            to="/eco-tourism"
+                            className="btn-secondary px-8 py-3.5 text-sm"
+                        >
+                            Eco Tourism
+                        </Link>
 
-                        <p className="text-slate-500 text-sm">
-                            Explore customized Odisha holiday packages for families,
-                            couples, and groups.
-                        </p>
-                    </Link>
-
-                    <Link
-                        to="/hotels"
-                        className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                    >
-                        <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-4">
-                            🏨
-                        </div>
-
-                        <h4 className="font-bold text-lg text-slate-900 mb-2">
-                            Hotels
-                        </h4>
-
-                        <p className="text-slate-500 text-sm">
-                            Browse premium hotels, beach resorts, and eco retreats across Odisha.
-                        </p>
-                    </Link>
-
-                    <Link
-                        to="/car-rental"
-                        className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                    >
-                        <div className="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center mb-4">
-                            🚗
-                        </div>
-
-                        <h4 className="font-bold text-lg text-slate-900 mb-2">
-                            Car Rental
-                        </h4>
-
-                        <p className="text-slate-500 text-sm">
-                            Comfortable cab services and airport transfers throughout Odisha.
-                        </p>
-                    </Link>
-
-                    <Link
-                        to="/about"
-                        className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                    >
-                        <div className="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center mb-4">
-                            ℹ️
-                        </div>
-
-                        <h4 className="font-bold text-lg text-slate-900 mb-2">
-                            About Us
-                        </h4>
-
-                        <p className="text-slate-500 text-sm">
-                            Learn more about Odisha Indiatrip Pvt. Ltd. and our travel expertise.
-                        </p>
-                    </Link>
-                </div>
-
-                <div className="mt-8 text-center">
-                    <Link
-                        to="/tour-packages"
-                        className="inline-flex items-center gap-2 bg-amber-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-amber-600 transition"
-                    >
-                        Explore All Packages →
-                    </Link>
+                        <a
+                            href="tel:+919958826437"
+                            className="btn-secondary px-8 py-3.5 text-sm"
+                        >
+                            Call Us: +91 99588 26437
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
