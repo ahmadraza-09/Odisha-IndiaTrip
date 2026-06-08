@@ -94,34 +94,6 @@ export const allPackages = [
     ],
   },
   {
-    id: 'tribal-odisha-expedition',
-    title: 'Tribal Odisha Expedition',
-    image: Tribe,
-    duration: '6 Nights / 7 Days',
-    badge: 'Most Unique',
-    badgeColor: 'bg-emerald-600',
-    category: 'tribal',
-    itinerary: ['Rayagada', 'Koraput', 'Jeypore', 'Malkangiri'],
-    includes: { hotel: true, cab: true, meals: false, sightseeing: true },
-    price: '22,999',
-    originalPrice: '28,999',
-    rating: 4.7,
-    reviews: 156,
-    description: "Venture into the heartland of Odisha's indigenous tribes. Visit Dongria Kondh villages, attend weekly haats, and witness ancient traditions that have survived millennia.",
-    highlights: ['Dongria Kondh Village Visit', 'Weekly Tribal Haats', 'Koraput Valley Views', 'Dokra Craft Workshops', 'Tribal Museum Visit', 'Traditional Dance Performance'],
-    inclusions: ['Accommodation in best available hotels', 'AC cab for all transfers', 'All sightseeing & entry fees', 'Tribal area permits', 'Local tribal guide', 'All toll, parking, taxes'],
-    exclusions: ['Airfare / train fare', 'All meals', 'Personal expenses', 'Camera fees in tribal areas', 'Travel insurance', 'Tips & gratuities'],
-    dayPlan: [
-      { day: 1, title: 'Arrival in Rayagada', detail: 'Arrive at Rayagada via train from Bhubaneswar. Visit the local market and Minajhola. Overnight in Rayagada.' },
-      { day: 2, title: 'Dongria Kondh Villages', detail: 'Visit Dongria Kondh villages in the Niyamgiri Hills. Witness their unique lifestyle and traditions. Overnight in Rayagada.' },
-      { day: 3, title: 'Chatikona Haat', detail: 'Visit the famous Wednesday haat at Chatikona where multiple tribes gather. Afternoon drive to Koraput. Overnight in Koraput.' },
-      { day: 4, title: 'Koraput Valley', detail: 'Explore Koraput — visit tribal museum, Jagannath Temple, and the stunning Deomali hills. Overnight in Koraput.' },
-      { day: 5, title: 'Jeypore & Kunduli', detail: 'Visit the famous Kunduli haat (Friday). Explore Jeypore and surrounding Paraja villages. Overnight in Jeypore.' },
-      { day: 6, title: 'Malkangiri Trail', detail: 'Drive to Malkangiri. Visit Bonda tribe market (Thursday only) or Didayi villages. Overnight in Malkangiri.' },
-      { day: 7, title: 'Departure', detail: 'Drive back to Jeypore. Board train to Bhubaneswar or continue as per your plan.' },
-    ],
-  },
-  {
     id: 'bhitarkanika-wildlife',
     title: 'Bhitarkanika Wildlife Tour',
     image: Bhitarkanika,
@@ -303,33 +275,6 @@ export const allPackages = [
     ],
   },
   {
-    id: 'bonda-didayi-trail',
-    title: 'Bonda & Didayi Trail',
-    image: Bonda,
-    duration: '5 Nights / 6 Days',
-    badge: 'Rare Access',
-    badgeColor: 'bg-red-600',
-    category: 'tribal',
-    itinerary: ['Malkangiri', 'Bonda Hills', 'Didayi Villages', 'Chitrakonda'],
-    includes: { hotel: true, cab: true, meals: false, sightseeing: true },
-    price: '24,999',
-    originalPrice: '31,999',
-    rating: 4.9,
-    reviews: 42,
-    description: 'One of the most exclusive tribal tours in India — visit the reclusive Bonda and Didayi tribes in the remote hills of Malkangiri. Special permits and local guides arranged.',
-    highlights: ['Bonda Tribe Market', 'Didayi Village Access', 'Malkangiri Remote Hills', 'Special Permits Arranged', 'Chitrakonda Dam Views', 'Most Exclusive Tour in India'],
-    inclusions: ['Accommodation in best available hotels', 'AC cab for all transfers', 'All sightseeing & entry fees', 'Special tribal area permits', 'Expert tribal guide', 'All toll, parking, taxes'],
-    exclusions: ['Airfare / train fare', 'All meals', 'Personal expenses', 'Camera fees in tribal areas', 'Travel insurance', 'Tips & gratuities'],
-    dayPlan: [
-      { day: 1, title: 'Arrival in Malkangiri', detail: 'Drive from Jeypore to Malkangiri (180 km) through stunning Eastern Ghats scenery. Check-in at hotel. Evening visit to the local market. Overnight in Malkangiri.' },
-      { day: 2, title: 'Bonda Hills', detail: 'Drive to the remote Bonda Hills. Visit the Bonda tribe — one of the most primitive and reclusive tribes in India. The Bonda women are distinctive for their colorful bead necklaces and minimal clothing. This is a rare, controlled access visit with special permits. Overnight in Malkangiri.' },
-      { day: 3, title: 'Bonda Market (Thursday)', detail: "Visit the Bonda weekly market at Mudulipada — one of the most extraordinary tribal markets in the world. Watch Bonda women descend from the hills to trade. Afternoon visit to nearby Kondh villages. Overnight in Malkangiri." },
-      { day: 4, title: 'Didayi Villages', detail: 'Drive deep into the forest to visit the Didayi tribe — a Particularly Vulnerable Tribal Group (PVTV) with a population of less than 10,000. Witness their unique forest-based lifestyle and honey collection techniques. Overnight in Chitrakonda.' },
-      { day: 5, title: 'Chitrakonda & Balimela', detail: 'Visit the stunning Balimela Dam and reservoir. Boat ride on the reservoir surrounded by forested hills. Visit the hydroelectric project viewpoint. Afternoon at leisure. Overnight in Chitrakonda.' },
-      { day: 6, title: 'Departure', detail: 'Drive back to Jeypore (200 km). Board train to Bhubaneswar or continue as per your plan.' },
-    ],
-  },
-  {
   id: 'rath-yatra-3n-4d',
   title: 'Rath Yatra Package',
   image: RathYatra,
@@ -381,32 +326,6 @@ export const allPackages = [
   ]
 },
 {
-  id: 'shakti-peethas-trail',
-  title: 'Shakti Peethas Trail',
-  image: ShaktiPeethas,
-  duration: '4 Nights / 5 Days',
-  badge: 'Sacred Pilgrimage',
-  badgeColor: 'bg-purple-700',
-  category: 'religious',
-  itinerary: ['Kolkata', 'Burdwan', 'Bolpur', 'Tarapeeth', 'Bahrampur'],
-  includes: { hotel: true, cab: true, meals: true, sightseeing: true },
-  price: '18,500',
-  originalPrice: '23,000',
-  rating: 4.9,
-  reviews: 34,
-  description: 'A deeply spiritual path through West Bengals most sacred holy shrines. Pay homage to legendary temples where the body parts of Devi Sati fell, transforming these landscapes into timeless centers of divine cosmic energy.',
-  highlights: ['Visit 7+ Major Shakti Peethas', 'Dakshineshwar & Kalighat Kali Shrines', 'Mystic Tarapith Cremation Ground Tantric Sites', 'Rebuilt 18th-Century Yogadhya Temple', 'Sacred Water Kund at Kankalitala'],
-  inclusions: ['Hotel accommodation on your chosen tier', 'AC private cab for entire circuit transfers', 'Daily breakfast at the properties', 'Local driver allowances, toll fees, and parking taxes', 'Assistance at major temple locations'],
-  exclusions: ['Airfare or train tickets to/from Kolkata', 'Monument entry fees and camera charges', 'Lunch and dinners unless strictly specified', 'Personal activities, puja contributions, or priest dakshina'],
-  dayPlan: [
-    { day: 1, title: 'Kolkata Arrival & Local Shrines', detail: 'Arrive in Kolkata and transfer to your hotel. In the afternoon, explore the iconic Dakshineshwar Temple built by Rani Rasmoni in 1847, followed by a visit to the historic Kalighat Temple on the banks of Adi Ganga. Overnight in Kolkata.' },
-    { day: 2, title: 'Kolkata - Burdwan - Bolpur', detail: 'Early checkout after breakfast. Proceed to visit Mangal Chandi Temple at Ujani (where Sati right wrist fell), Yogadhya Temple in Khirgram Village (right toe), and Bahula Temple near Katwa (left arm). Evening transfer and check-in at Bolpur. Overnight in Bolpur.' },
-    { day: 3, title: 'Bolpur - Tarapeeth En-route Holy Sites', detail: 'Depart early towards Tarapeeth. Along the way, explore Kankalitala Temple (waist), the massive Fullora Attahas shrine (lower lip), and the Nandikeshwari Temple in Sainthia town (necklace). Evening check-in and overnight at Tarapeeth.' },
-    { day: 4, title: 'Full Day Spiritual Immersive at Tarapeeth', detail: 'Visit the 13th-century Tarapith Temple dedicated to Goddess Tara (third eye). Explore the closely linked Bamdev Shangha Ashram and the highly revered Maha Smasan (cremation ground), deeply central to Shaktism and tantric practices. Overnight at Tarapeeth.' },
-    { day: 5, title: 'Bahrampur - Nalateshwari - Kolkata Departure', detail: 'After breakfast, checkout and head back to Kolkata. Stop en-route at the beautiful Nalateshwari Temple in fine plateau surroundings where Satis throat fell. Continue directly to the Kolkata airport for your departure.' }
-  ]
-},
-{
   id: 'jagannath-shakti-peeth',
   title: 'Jagannath Darshan With Shakti Peeth Tour',
   image: Jagannath,
@@ -430,58 +349,6 @@ export const allPackages = [
     { day: 3, title: 'Gopalpur - Taratarini Shakti Peeth - Bhubaneswar', detail: 'Catch the sunrise on Gopalpur beach. After breakfast, checkout and drive to Bhubaneswar, visiting the revered hill-top Taratarini Shakti Peeth en-route. Upon reaching Bhubaneswar, explore the ancient Khandagiri & Udaigiri Jain Rock Cut Caves. Overnight in Bhubaneswar.' },
     { day: 4, title: 'Excursion to Girija Devi Temple (Jajpur)', detail: 'Embark on a morning excursion to Jajpur to visit the highly sacred Girija Devi Temple Shakti Peeth. After lunch, drive back to Bhubaneswar, stopping at the Chattia Bata Shree Jagannath Temple along the way. Evening open for local shopping. Overnight in Bhubaneswar.' },
     { day: 5, title: 'Temple City Sightseeing & Departure', detail: 'After breakfast, checkout and tour the historical city of temples: Parshurameshwar, Mukteshwar, Rajarani, Kedargouri, Brahmeshwar, Bhaskareshwar, and the majestic Lingaraj Temple. Conclude with a direct transfer to the airport for your flight.' }
-  ]
-},
-{
-  id: 'detox-rejuvenation-tour',
-  title: 'Detox & Rejuvenation Tour',
-  image: DetoxTour,
-  duration: '5 Nights / 6 Days',
-  badge: 'Wellness & Healing',
-  badgeColor: 'bg-teal-600',
-  category: 'wellness',
-  itinerary: ['Bhubaneswar', 'Konark', 'Puri', 'Chilika Lake', 'Rural Wellness Resort'],
-  includes: { hotel: true, cab: true, meals: true, sightseeing: true }, // Higher inclusion due to complete resort wellness package
-  price: '29,500',
-  originalPrice: '38,000',
-  rating: 4.9,
-  reviews: 29,
-  description: 'Balance your soul by combining historical marvels with deep physiological recovery. Explore Odishas iconic cultural golden triangle before retiring to a peaceful, jungle-surrounded wellness resort for customized therapies and organic nutrition.',
-  highlights: ['2 Full Days at Jungle-Surrounded Health Resort', 'Doctor Consultation & Custom Body Therapies', 'Daily Guided Yoga & Meditation Sessions', 'Saatvik Organic Restaurant Buffets', 'Blue Flag Certified Golden Beach Relaxation', 'Kala Bhoomi Craft Museum & Heritage Sites'],
-  inclusions: ['Accommodation at standard hotels and an premium off-town Health Resort', 'AC vehicle for sightseeing transits', 'All meals included during your resort stay (Saatvik menu)', 'Doctor wellness consultation, custom therapy sessions, tea, and snack breaks', 'Resort activities: swimming, boating, cycling, and walking tracks', 'All standard road tolls, driver packages, and taxes'],
-  exclusions: ['Flight/Train travel bookings', 'Monument access tickets or boating fees at Chilika Lake', 'Laundry services or personal incidentals', 'Any extra therapies outside the pre-arranged medical plan'],
-  dayPlan: [
-    { day: 1, title: 'Arrival in Bhubaneswar & Heritage Caves', detail: 'Arrive at Bhubaneswar Airport and check into your hotel. After refreshing, visit the Kala Bhoomi Odisha Craft Museum followed by the historic Jain rock-cut architecture at Khandagiri & Udaygiri Caves. Overnight in Bhubaneswar.' },
-    { day: 2, title: 'Bhubaneswar - Dhauli - Konark - Puri', detail: 'After breakfast, checkout and proceed to Puri. Along the way, visit the Dhauli Peace Pagoda, Pipili Applique market, and the magnificent UNESCO World Heritage Sun Temple at Konark. Check in at Puri and enjoy an evening walk on the Golden Beach. Overnight in Puri.' },
-    { day: 3, title: 'Puri Exploration & Chilika Lake Excursion', detail: 'Morning visit to Shree Jagannath Temple and Gundicha Temple. Next, head out to Satapada on Chilika Lake for an island boat cruise to observe wild Irrawaddy Dolphins. Stop by the Alarnath Temple on your return loop. Overnight in Puri.' },
-    { day: 4, title: 'Puri - Temple Tour - Check-in at Health Resort', detail: 'After breakfast, checkout and drive to Bhubaneswar for a classic temple tour (Parshurameshwar, Mukteshwar, Rajarani, and Lingaraj). In the afternoon, transfer to the remote health resort. Enjoy a doctor consultation, customized therapies, and a curated buffet dinner. Overnight at Health Resort.' },
-    { day: 5, title: 'Full Day Complete Rejuvenation & Yoga', detail: 'Experience a dedicated wellness routine: 07 AM Yoga, organic breakfast, morning swimming or cycling activities, a nutritious lifestyle lunch, afternoon wellness therapies, herbal tea breaks, nature walks, and evening cultural programs with a wholesome dinner. Overnight at Health Resort.' },
-    { day: 6, title: 'Resort Wrap-up & Departure', detail: 'Begin with morning yoga and breakfast, followed by a final follow-up consultation with your resident doctor. Checkout from the resort and take a private vehicle transfer straight to the airport for your journey home.' }
-  ]
-},
-{
-  id: 'emerald-highlands-koraput',
-  title: 'Emerald Highlands of Odisha Trip',
-  image: EmeraldHighland,
-  duration: '3 Nights / 4 Days',
-  badge: 'Offbeat Tribal',
-  badgeColor: 'bg-emerald-700',
-  category: 'tribal',
-  itinerary: ['Koraput', 'Dumriput', 'Chitrokut', 'Tiratgarh', 'Gupteshwar', 'Duduma', 'Deomali'],
-  includes: { hotel: true, cab: true, meals: true, sightseeing: true },
-  price: '14,999',
-  originalPrice: '19,500',
-  rating: 4.8,
-  reviews: 31,
-  description: 'Venture deep into the untamed beauty of Southern Odisha. This journey takes you through breathtaking mountain peaks, mystical limestone caves, stunning waterfalls, and rich tribal heritage.',
-  highlights: ['Deomali Peak - Highest Peak of Odisha', 'Majestic Chitrokut & Duduma Waterfalls', 'Gupteshwar Cave Temple', 'Sabara Shreekhetra & Tribal Museum', 'Scenic Eastern Ghats Valleys'],
-  inclusions: ['Hotel accommodation on double sharing basis', 'AC cab for all transfers and mountain valley transit', 'Daily breakfast at the hotel', 'All driver allowances, tolls, and parking taxes'],
-  exclusions: ['Airfare / Train fare to Koraput', 'Entry fees to museums, caves, and waterfalls', 'Lunch and dinners', 'Personal expenses and tips'],
-  dayPlan: [
-    { day: 1, title: 'Arrival in Koraput & Local Heritage', detail: 'Morning arrival at Koraput Railway Station and transfer to the hotel. After refreshment, explore local sights covering Dumriput Hanuman Temple, Konta Baunsuni Temple, the Tribal Museum, and Sabara Shreekhetra. Overnight stay in Koraput.' },
-    { day: 2, title: 'Waterfalls Excursion', detail: 'After breakfast, embark on an outdoor excursion trip to visit the stunning Chitrokut Waterfall, Tiratgarh Waterfall, and the fascinating Kutumsar Cave. Return for an overnight stay in Koraput.' },
-    { day: 3, title: 'Caves & Majestic Waterfalls', detail: 'After breakfast, head out for another beautiful excursion to explore the sacred Gupteshwar Cave Temple, Machkund, and the roaring Duduma Waterfall. Overnight stay in Koraput.' },
-    { day: 4, title: 'Highest Peak Exploration & Departure', detail: 'After breakfast, check out from the hotel. Visit Nandapur Batisinghashan, Rani Duduma Waterfall, and drive up to Deomali—the highest peak of Odisha. Evening transfer to Koraput Railway Station for your onwards connection.' }
   ]
 },
 {
@@ -539,33 +406,6 @@ export const allPackages = [
   ]
 },
 {
-  id: 'keonjhar-balasore-waterfalls',
-  title: 'Keonjhar & Balasore Tour',
-  image: ChandipurBeach,
-  duration: '5 Nights / 6 Days',
-  badge: 'Hidden Wonders',
-  badgeColor: 'bg-indigo-600',
-  category: 'nature',
-  itinerary: ['Keonjhar', 'Gonasika', 'Sitabinji Caves', 'Chandipur', 'Panchalingeshwar'],
-  includes: { hotel: true, cab: true, meals: true, sightseeing: true },
-  price: '19,200',
-  originalPrice: '24,000',
-  rating: 4.6,
-  reviews: 18,
-  description: 'Unveil Northern Odishas best-kept secrets. Track majestic multi-tiered waterfalls, discover mysterious rock art caves associated with ancient epics, and wander along a beach that completely disappears during low tide.',
-  highlights: ['The Unique Vanishing Beach of Chandipur', 'Panchalingeshwar Hilltop Shrines', 'Sanaghagara & Badaghagara Waterfalls', 'Ancient Sitabinji Fresco Painting Caves', 'Gonasika Mountain & River Origin'],
-  inclusions: ['Comfortable hotel accommodation for the entire circuit', 'AC private vehicle transfers as per itinerary', 'Breakfast at the hotels', 'Driver allowance, parking passes, and road taxes'],
-  exclusions: ['Train / Flight connectivity tickets to Howrah/Balasore', 'Entry tickets to waterfalls, caves, or parks', 'Lunches and Dinners', 'Personal tips, porters, and laundry expenses'],
-  dayPlan: [
-    { day: 1, title: 'Arrival in Keonjhar', detail: 'Arrive at Keonjhar Railway Station and get a private transfer to your hotel. After checking in and relaxing, spend your evening visiting the beautiful Shree Jagannath Temple and the local traditional market. Night stay at Keonjhar.' },
-    { day: 2, title: 'Keonjhar Waterfalls & Peaks', detail: 'After breakfast, tour the iconic nature spots of Keonjhar: Sanaghagara Waterfall, Badaghagara Waterfall, Gonasika hills, and the historic Brahmeshwar Mahesh Temple. Return for a night stay at Keonjhar.' },
-    { day: 3, title: 'Sitabinji Caves & Bhimkund', detail: 'Dedicate the day to exploring deep local heritage: Kanjhari Dam, Maa Tarini Temple, and the ancient Sitabinji Caves (believed to be the fresco art birthplace of Lav & Kush). See the Gundichaghagi Waterfall and the massive Bhimkund gorge. Night stay at Keonjhar.' },
-    { day: 4, title: 'Keonjhar - Chandipur Vanishing Sea', detail: 'After breakfast, check out from the hotel and take a beautiful drive down to Chandipur-on-Sea. Check-in and spend your afternoon relaxing on the unique vanishing beach, where the sea recedes kilometers back during tide shifts. Overnight stay at Chandipur.' },
-    { day: 5, title: 'Chandipur - Panchalingeshwar Excursion', detail: 'Witness a brilliant sunrise on the flat beach. After breakfast, leave for a scenic excursion to Panchalingeshwar Temple (where five perennial streams flow over Shivlings), Nilagiri Shree Jagannath Temple, and Khumkut Dam. Return to Chandipur for overnight stay.' },
-    { day: 6, title: 'Chandipur - Balasore Station Drop', detail: 'Enjoy a relaxed breakfast by the beach, then check out from the hotel. Take a timely transfer to the Balasore Railway Station to board your onward train connection.' }
-  ]
-},
-{
   id: 'puri-gangasagar-baidyanath-dham',
   title: 'Jagannath Puri, Gangasagar & Baba Baidyanath Tour',
   image: Deoghar,
@@ -592,40 +432,6 @@ export const allPackages = [
     { day: 6, title: 'Kolkata Sightseeing - Overnight Train to Jasidhi', detail: 'After breakfast, checkout and explore Kolkata: Eden Garden, Fort William, Indian Museum, Tagores House, Victoria Memorial, St. Pauls Cathedral, and the Birla Planetarium[cite: 476]. Evening transfer to Howrah Station to board your overnight train to Jasidhi[cite: 477, 478].' },
     { day: 7, title: 'Jasidhi Arrival - Deoghar Baba Baidyanath Dham', detail: 'Morning arrival at Jasidhi Station and transfer to your hotel in Deoghar[cite: 478, 479]. After refreshing, head out for holy darshan at the sacred Baba Baidyanath Dham to offer prayers at the revered Jyotirlinga of Lord Shiva[cite: 479, 480]. Overnight stay at Deoghar[cite: 483].' },
     { day: 8, title: 'Basukinath Temple Completion & Departure', detail: 'After breakfast, checkout and visit Basukinath Temple in Dumka district (believed to complete the Deoghar pilgrimage loop)[cite: 483, 484]. Get a timely return transfer to Deoghar Airport to board your flight for onward connections[cite: 485].' }
-  ]
-},
-{
-  id: 'grand-heritage-coastal-tribal',
-  title: 'Grand Heritage, Coastal & Tribal Explorer',
-  image: Tribe,
-  duration: '12 Nights / 13 Days',
-  badge: 'Deep Immersive',
-  badgeColor: 'bg-stone-700',
-  category: 'tribal',
-  itinerary: ['Bhubaneswar', 'Dhenkanal', 'Puri', 'Konark', 'Chilika Lake', 'Gopalpur', 'Rayagada', 'Semiliguda', 'Vishakhapatnam'],
-  includes: { hotel: true, cab: true, meals: true, sightseeing: true }, // CP Basis (Breakfast included)
-  price: '1,86,000', // Based on Option 2 single room rate per person
-  originalPrice: '2,18,000', // Option 1 rate
-  rating: 4.9,
-  reviews: 35,
-  description: 'An ultimate, comprehensive expedition mapping Odishas historical architectural milestones, textile villages, craft settlements, and deep ancestral tribal markets across the Niyamagiri and Koraput hill ranges.',
-  highlights: ['Stay at a Royal Heritage Palace in Dhenkanal', 'Bonda & Tattoo-Faced Kutia Kondh Tribes', 'Double Ikat & Dhokra Craft Village Walks', 'Chilika Lake Migratory Bird Cruise', 'Niyamagiri Range Dongariya Kondh Market'],
-  inclusions: ['All land transfers & excursions by premium AC vehicle (Innova Crysta)', 'Accommodation in a Single Bed Room on CP Basis (Breakfast included)', 'Accompanying English-speaking guide as per the itinerary', 'Special administrative permissions for tribal area visits', '1ltr Mineral water per person per day in the vehicle', 'All road tolls, driver allowances, and parking fees'],
-  exclusions: ['Airfare or train ticket bookings', 'Monument entry fees and boat ride charges in Chilika Lake', 'Personal expenses like laundry, alcoholic drinks, tips, and mini-bar charges', 'Tribal/Gotipua dance arrangements or authentic local feast additions'],
-  dayPlan: [
-    { day: 1, title: 'Arrival Bhubaneswar & Historical Caves', detail: 'Arrive in Bhubaneswar; transfer to hotel. Visit the informative Tribal Museum and the oldest rock-cut Jain caves at Khandagiri & Udaigiri on Kumari Parvat. Overnight at Bhubaneswar.' },
-    { day: 2, title: 'Bhubaneswar Temple Tour & Craft Centers', detail: 'Full day exploring the Kalingan architecture masterpieces: Parashurameshwar, Mukteshwar, Rajarani, and Lingaraj. Visit the circular 64 Yogini Temple at Hirapur, Dhauli Ashokan Rock Edicts, and Kalabhoomi Craft Museum. Overnight at Bhubaneswar.' },
-    { day: 3, title: 'Bhubaneswar - Nuapatna - Sadeibarini - Dhenkanal', detail: 'Checkout and drive to Dhenkanal. En-route, observe Double Ikat weaving at Nuapatna and Dhokra metal works at Sadeibarini. Witness the sunset prayer rituals of Mahima sadhus at Joranda Gadi. Overnight at a Dhenkanal Heritage Palace.' },
-    { day: 4, title: 'Dhenkanal - Pipili - Raghurajpur - Puri Beach', detail: 'Drive to Puri via the Pipili Applique market village and Raghurajpur Heritage Artisans Village to discover Pattachitra arts. Check into your beachside resort with free time on the Golden Beach. Overnight at Puri.' },
-    { day: 5, title: 'Puri Darshan & Konark Sun Temple Excursion', detail: 'Morning visit to Shree Jagannath Temple (for Hindus) and Grand Road. Embark on an afternoon excursion to the UNESCO World Heritage Konark Sun Temple (Black Pagoda) and Chandrabhaga Beach. Overnight at Puri.' },
-    { day: 6, title: 'Puri - Mangalajodi Bird Watching - Gopalpur', detail: 'Depart for Mangalajodi at Chilika Lake for a scenic boat cruise tracking millions of migratory birds. Continue past the hilltop Taratarini Shakti Peeth to the historical trading shore of Gopalpur-on-Sea. Overnight at Gopalpur.' },
-    { day: 7, title: 'Gopalpur - Lanjia Saura Market - Rayagada', detail: 'Drive deep into the hills toward Rayagada. Stop en-route to experience the Monday weekly market of the primitive Lanjia Saura tribe at Puttasingh. Overnight at Rayagada.' },
-    { day: 8, title: 'Rayagada - Kutia Kondh Village Excursion', detail: 'Full day excursion to Kotgarh and Tumudibandh to meet the tattoo-faced Kutia Kondh primitive group. Explore their unique thatch-roofed settlements and the local Tuesday weekly market. Overnight at Rayagada.' },
-    { day: 9, title: 'Rayagada - Dongariya Kondh Market - Semiliguda', detail: 'Visit the Wednesday market of the fruit-cultivating Dongariya Kondh group in the Niyamagiri hills, known for their unique jewelries and nose rings. Post-lunch, drive down to Semiliguda via Desia Kondh villages. Overnight at Semiliguda.' },
-    { day: 10, title: 'Semiliguda - Bonda Primitive Market - Semiliguda', detail: 'Journey to the highly exclusive Thursday weekly market to witness the reclusive, bead-clad Bonda tribe along with the Gadhaba and Didayee communities. Observe long-preserved tribal customs. Overnight at Semiliguda.' },
-    { day: 11, title: 'Semiliguda - Pottery Village & Paraja Market', detail: 'Visit the traditional pottery-making settlement of Limika Village and interact with the hardworking, vibrant Paraja tribe at their Friday market circuit. Overnight at Semiliguda.' },
-    { day: 12, title: 'Semiliguda - Koraput Jagannath Temple - Gupteshwar Caves', detail: 'Visit Sabara Shreekhetra Jagannath Temple in Koraput, then descend to the ancient limestone cave temple of Gupteshwar dedicated to Lord Shiva. See Dhuruba tribal village layouts at Baligaon. Overnight at Semiliguda.' },
-    { day: 13, title: 'Semiliguda - Vishakhapatnam Departure', detail: 'After breakfast, take a scenic cross-border mountain road drive directly down to the Vishakhapatnam Airport for your afternoon flight home.' }
   ]
 },
 {
@@ -656,36 +462,6 @@ export const allPackages = [
   ]
 },
 {
-  id: 'bhubaneswar-gopalpur-taptapani-hotsprings',
-  title: 'Classical Southern Odisha Eco & Wellness Circuit',
-  image: TaptapaniHotsprings,
-  duration: '8 Nights / 9 Days',
-  badge: 'Eco & Wellness',
-  badgeColor: 'bg-teal-700',
-  category: 'nature',
-  itinerary: ['Bhubaneswar', 'Diamond Triangle', 'Puri', 'Konark', 'Chilika Lake (Barkul)', 'Gopalpur', 'Taptapani', 'Chandragiri'],
-  includes: { hotel: true, cab: true, meals: true, sightseeing: true }, // Breakfast included
-  price: '21,500',
-  originalPrice: '27,000',
-  rating: 4.7,
-  reviews: 26,
-  description: 'Unwind through an extensive 9-day eco-adventure balancing the heritage of the Diamond Triangle with thermal hot springs, Tibetan monasteries, and the serene beaches of Southern Odisha.',
-  highlights: ['Therapeutic Taptapani Hot Sulfur Springs', 'Jirang Buddhist Monastery & Tibetan Settlement', 'Diamond Triangle Buddhist Archaeological Sites', 'Chilika Barkul Island Boat Cruise to Kalijai', 'Evening Light & Sound Show at Konark'],
-  inclusions: ['All overland journeys and sightseeing by a comfortable private AC cab', '8 Nights hotel and eco-resort accommodation bookings on CP Plan', 'Boating activities on Chilika Lake at Barkul to visit Kalijai Island', 'Driver outstation allowances, fuel costs, parking fees, and road toll taxes'],
-  exclusions: ['Airfare / Railway travel booking tickets to Bhubaneswar/Berhampur', 'Entry tickets to Konark light & sound show or museums', 'Lunch and dinners unless strictly specified', 'Personal expenses, laundry, and guide fees'],
-  dayPlan: [
-    { day: 1, title: 'Arrival Bhubaneswar Full Day Temple Tour', detail: 'Arrive at Bhubaneswar; refresh and proceed to explore the architectural landmarks: 108 Shivling temple, Lingaraj, Chausath Yogini, Parshurameshwar, Mukteshwar, Rajarani, and KedarGauri temple. Overnight at Bhubaneswar.' },
-    { day: 2, title: 'Full Day Diamond Triangle Excavations', detail: 'After breakfast, embark on a comprehensive historical day trip to the ancient Diamond Triangle Buddhist university and excavated monastic sites of Ratnagiri, Lalitagiri, and Udaygiri. Overnight at Bhubaneswar.' },
-    { day: 3, title: 'Bhubaneswar Wildlife & Tribal Museums', detail: 'Morning visit to Nandankanan Zoological Park (famous for its white tiger safari) and the rich collections of the local Tribal Museum (both closed on Mondays). Evening open for shopping transits. Overnight at Bhubaneswar.' },
-    { day: 4, title: 'Bhubaneswar - Heritage Crafts - Puri Beach', detail: 'Checkout and proceed towards Puri. Stop en-route to visit Dhauli Peace Pagoda, Pipili Applique Market, and the UNESCO World Heritage Craft Village of Raghurajpur. Relax on the Golden Beach in the evening. Overnight at Puri.' },
-    { day: 5, title: 'Puri Grand Road & Local Shrines', detail: 'Spend the day visiting the holy shrines: Shree Jagannath Temple, Gundicha Temple, Loknath Temple, Mausimaa Temple, and Bedi Hanuman. Enjoy free time at the beach craft markets. Overnight at Puri.' },
-    { day: 6, title: 'Puri - Konark Monuments Day Excursion', detail: 'Travel to Konark along the scenic Marine Drive. Visit Ramachandi Temple, Chandrabhaga beach, Shri Ananta Adbhut Math, and the Konark Museum. Attend the magnificent evening Light & Sound Show at the Sun Temple. Overnight at Puri.' },
-    { day: 7, title: 'Puri - Barkul (Chilika Lake Boat Ride) - Gopalpur', detail: 'Checkout and drive to Barkul on Chilika Lake. Board a scenic boat cruise across the lake to visit the island-bound Kalijai Temple. Continue to Gopalpur-on-Sea to check into your beachside property. Overnight at Gopalpur.' },
-    { day: 8, title: 'Gopalpur - Hot Springs & Tibetan Settlement Excursion', detail: 'Embark on a beautiful mountain road excursion to Taptapani Hot Sulfur Springs, followed by a visit to the Chandragiri Tibetan Settlement and the grand Jirang Buddhist Monastery. Overnight at Gopalpur-on-Sea.' },
-    { day: 9, title: 'Gopalpur - Berhampur Station Departure', detail: 'Enjoy breakfast and a final stroll along the pristine beach. Complete checkout, visit local sights for shopping, and transfer to Berhampur Railway Station for your onwards journey.' }
-  ]
-},
-{
   id: 'double-shakti-peeth-mahendragiri-peak',
   title: 'Double Shakti Peeth & Mahendragiri Peak Trail',
   image: MahendragiriPeak,
@@ -712,62 +488,6 @@ export const allPackages = [
     { day: 6, title: 'Excursion to Mahendragiri Mountain Peak', detail: 'Embark on a full-day road mountain excursion trip to Mahendragiri, the legendary second-highest peak of Odisha, rich in history and natural ecosystem vistas. Overnight stay at Gopalpur.' },
     { day: 7, title: 'Gopalpur Sunrise - Art Museums - Bhubaneswar', detail: 'Catch a glorious sunrise on Gopalpur beach. After breakfast, checkout and drive to Bhubaneswar. Spend your afternoon exploring Kalabhoomi Craft Museum and Khandagiri & Udaigiri Jain Rock Cut Caves. Overnight at Bhubaneswar.' },
     { day: 8, title: 'Temple City Sightseeing & Departure', detail: 'Checkout and complete your tour across the ancient city of temples: Parshurameshwar, Mukteshwar, Kedar Gouri, Rajarani, and Lingaraj. Transfer to Bhubaneswar Airport in the evening for your flight.' }
-  ]
-},
-{
-  id: 'odisha-kolkata-gangasagar-pilgrimage',
-  title: 'Two-Nation Sacred Footprints & Gangasagar Trail',
-  image: Gangasagar,
-  duration: '4 Nights / 5 Days',
-  badge: 'Holy Confluence',
-  badgeColor: 'bg-red-600',
-  category: 'religious',
-  itinerary: ['Bhubaneswar', 'Puri', 'Konark', 'Kolkata', 'Gangasagar'],
-  includes: { hotel: true, cab: true, meals: true, sightseeing: true }, // CP Basis
-  price: '16,500',
-  originalPrice: '21,000',
-  rating: 4.8,
-  reviews: 54,
-  description: 'A powerful spiritual journey tracking the coastal Kalingan shrines of Jagannath Dham, moving across to West Bengal for a holy pilgrimage dip at the delta confluence of Gangasagar[cite: 1318].',
-  highlights: ['Holy Pilgrimage Confluence at Gangasagar Island [cite: 1318]', 'Dakshineswar Kali Temple & Belur Math Shrines [cite: 1318]', 'Shree Jagannath Temple & Golden Beach in Puri [cite: 1318]', 'Irrawaddy Dolphin Tracking at Chilika Lake [cite: 1318]', 'Khandagiri & Udayagiri Ancient Jain Caves [cite: 1318]'],
-  inclusions: ['Private ground transport vehicle for city transits at each state zone [cite: 1318]', 'Hotel accommodation on double sharing with breakfast included [cite: 1318]', 'Driver packages, road tolls, and parking allowances [cite: 1318]'],
-  exclusions: ['Interstate flight or train bookings between Bhubaneswar and Kolkata [cite: 1318]', 'Local ferry/vessel crossing fees to Sagar Island [cite: 1318]', 'Boating rentals at Chilika Lake or monument entries [cite: 1318]', 'Personal expenses, puja fees, and tips [cite: 1318]'],
-  dayPlan: [
-    { day: 1, title: 'Bhubaneswar Arrival - Heritage Transits - Puri', detail: 'On arrival at Bhubaneswar, get picked up from the station/airport[cite: 1318]. En-route, visit Lingaraj Temple, Dhauli Peace Pagoda, and Pipili Applique village[cite: 1318]. Continue to Puri to check-in and relax at Puri beach[cite: 1318]. Overnight at Puri[cite: 1318].' },
-    { day: 2, title: 'Puri Darshan & Chilika Satapada Day Trip', detail: 'After breakfast, enjoy holy darshan at Shri Jagannath Temple, Gundicha Temple, Loknath, and Bedi Hanuman[cite: 1318]. Proceed to Satapada on Chilika Lake for an extensive cruise to see wild Irrawaddy Dolphins[cite: 1318]. Overnight at Puri[cite: 1318].' },
-    { day: 3, title: 'Puri - Konark Sun Temple - Fly to Kolkata', detail: 'Checkout and drive to Bhubaneswar[cite: 1318]. En-route, visit Ramachandi Temple, Chandrabhaga Beach, and Konark Sun Temple[cite: 1318]. Explore Kalabhoomi Museum and Khandagiri & Udayagiri caves before dropping at the airport for your flight to Kolkata[cite: 1318]. Pick up and check-in at your Kolkata hotel[cite: 1318]. Overnight at Kolkata[cite: 1318].' },
-    { day: 4, title: 'Full Day Gangasagar Pilgrimage Excursion', detail: 'Leave early morning for an excursion to Gangasagar at Sagar Island in the Ganges delta[cite: 1318]. Join hundreds of devotees to see the confluence of River Ganges and the Bay of Bengal, and offer prayers at the Kapil Muni Temple[cite: 1318]. Return to Kolkata[cite: 1318]. Overnight at Kolkata[cite: 1318].' },
-    { day: 5, title: 'Kolkata Shrines Tour & Final Departure', detail: 'After breakfast, checkout and tour Kolkata: Dakshineswar Kali Temple, Belur Math (Kali Mata, Thakur Ramakrishna Home, Mata Sarada, and Swami Vivekananda math)[cite: 1318]. Conclude with a direct drop-off transfer to Kolkata Airport or Railway Station for your onward journey[cite: 1318].' }
-  ]
-},
-{
-  id: 'classical-coastal-daringbadi-9d',
-  title: 'Classical Coastal Odisha & Daringbadi Circuit',
-  image: Daringbadi,
-  duration: '8 Nights / 9 Days',
-  badge: 'Complete Odisha',
-  badgeColor: 'bg-teal-600',
-  category: 'nature',
-  itinerary: ['Bhubaneswar', 'Puri', 'Raghurajpur', 'Konark', 'Chilika Lake (Barkul)', 'Gopalpur', 'Taptapani', 'Daringbadi'],
-  includes: { hotel: true, cab: true, meals: true, sightseeing: true }, 
-  price: '23,500',
-  originalPrice: '29,000',
-  rating: 4.8,
-  reviews: 33,
-  description: 'An exceptional 9-day grand vacation tying Odishas heritage golden triangle with the tropical beaches of Gopalpur, relaxing thermal springs, and the cool mountain pine forests of Daringbadi.',
-  highlights: ['Full Day Daringbadi Valley Tour', 'Chilika Lake Barkul Island Boat Ride', 'Taptapani Hot Sulphur Spring & Tibetan Jirang Monastery', 'UNESCO Sun Temple at Konark', 'Raghurajpur Heritage Artisan Village'],
-  inclusions: ['All transfers, sightseeing, and mountain excursions by private AC vehicle', '8 Nights hotel and eco-resort accommodations on CP basis', 'Included boat cruise on Chilika Lake at Barkul to visit Kalijai Temple Island', 'All standard parking bills, road highway tolls, and driver outstation fees'],
-  exclusions: ['Airfare or train tickets to/from Bhubaneswar', 'Monument admission entries or local guide fees', 'Lunch and dinner meals unless strictly specified', 'Personal activities, laundry, room service, or tips'],
-  dayPlan: [
-    { day: 1, title: 'Bhubaneswar Arrival - Heritage Transts - Puri', detail: 'Arrival at Bhubaneswar Airport and transfer to Puri. En-route, visit the Dhauli Peace Pagoda, Ashokan Rock Edicts, and the vibrant Pipli Applique Market. Enjoy your evening free at the Blue Flag Certified Golden Beach. Overnight stay at Puri.' },
-    { day: 2, title: 'Puri - Raghurajpur Craft Village & Konark Sun Temple', detail: 'Morning after breakfast, head out on an excursion to visit the UNESCO World Heritage Craft Village of Raghurajpur, Ramachandi Temple, Chandrabhaga Beach, and the grand Konark Sun Temple. Return to Puri to explore Shree Gundicha, Loknath temple, and Grand Road. Overnight stay at Puri.' },
-    { day: 3, title: 'Puri - Chilika Lake (Barkul Island Cruise) - Gopalpur', detail: 'Morning after breakfast, check out from the hotel and drive towards Gopalpur-on-Sea. Stop en-route at Barkul to take a scenic boat ride on Chilika Lake to visit the island-bound Kalijai Temple. Check into your hotel at the pristine beach of Gopalpur. Overnight stay at Gopalpur.' },
-    { day: 4, title: 'Gopalpur - Hot Springs & Monasteries - Gopalpur', detail: 'Morning after breakfast, go on an excursion trip into the hills to visit the Taptapani Hot Spring, Chandragiri Buddhist Monastery, and the serene Tibetan Settlement. Return to Gopalpur for an overnight stay.' },
-    { day: 5, title: 'Gopalpur - Historical Temples - Daringbadi Ascent', detail: 'In the morning after breakfast and checkout, visit the Sorada Dam, Dharkot Jagannath Temple, and Tararani temple. Drive up the mountain roads into Daringbadi, famously known as the Kashmir of Odisha. Check into your hotel and relax. Overnight stay at Daringbadi.' },
-    { day: 6, title: 'Daringbadi Full Day Mountain Sightseeing', detail: 'Dedicate the entire day to exploring Daringbadi: Nature Park, Doluri River, Pine Jungle, lush Coffee Garden, Lovers Paradise, Mridubandha Waterfall, and the local Emu farm. Enjoy a cozy campfire with snacks back at the resort. Overnight stay at Daringbadi.' },
-    { day: 7, title: 'Daringbadi to Bhubaneswar Transfer', detail: 'Morning after breakfast, check out from the hotel and embark on a 250 km scenic drive down the hills towards Bhubaneswar. Upon arrival, check into the hotel and enjoy your evening at leisure. Overnight stay at Bhubaneswar.' },
-    { day: 8, title: 'Bhubaneswar Full Day Temple City Tour', detail: 'Morning after breakfast, visit the famous Nandankanan Zoological Park. After lunch, visit the magnificent city of temples covering Parshurameshwar, Mukteshwar, Rajarani, and the grand Lingaraj Temple. Evening free for shopping. Overnight stay at Bhubaneswar.' },
-    { day: 9, title: 'Bhubaneswar Departure', detail: 'Morning after breakfast, complete your check-out from the hotel. Enjoy a seamless departure transfer to the Bhubaneswar Airport to board your flight for your onward journey.' }
   ]
 },
 {
@@ -891,46 +611,6 @@ export const allPackages = [
     { day: 3, title: 'Puri - Konark Sun Temple - Flight to Kolkata', detail: 'Morning after breakfast, check out from the hotel and proceed towards Bhubaneswar. Along the way, explore Ramachandi Temple, Chandrabhaga Beach, and the grand Konark Sun Temple. In Bhubaneswar, visit Kalabhoomi Craft Museum and the Khandagiri & Udayagiri Caves before dropping at the airport for your flight to Kolkata. On arrival in Kolkata, get picked up and transfer to your hotel. Overnight stay at Kolkata. [cite: 653]' },
     { day: 4, title: 'Kolkata to Gangasagar Holy Day Excursion', detail: 'Early morning, proceed for a full-day spiritual excursion to Gangasagar at Sagar Island, located in the Ganges delta about 100 km south of Kolkata. Take a holy dip at the confluence of the River Ganges and the Bay of Bengal, and offer prayers at the historic Kapil Muni Temple. Drive back to Kolkata. Overnight stay at Kolkata. [cite: 653]' },
     { day: 5, title: 'Kolkata Shrines Loop & Final Departure', detail: 'Morning after breakfast, check out from the hotel. If time permits, visit the iconic Dakshineswar Kali Temple and Belur Math (covering Kali Mata shrine, Thakur Ramakrishna Home, Mata Sarada math, and Swami Vivekananda math). Conclude with a direct drop-off transfer to the Kolkata Airport or Railway Station for your journey home. [cite: 653]' }
-  ]
-},
-{
-  id: 'bhub-puri-quick-heritage-2d',
-  title: 'Bhubaneswar & Puri Quick Heritage Tour',
-  image: Bhubaneshwar,
-  duration: '1 Night / 2 Days',
-  badge: 'Express Circuit',
-  badgeColor: 'bg-blue-600',
-  category: 'religious',
-  itinerary: ['Bhubaneswar', 'Puri', 'Raghurajpur', 'Konark'],
-  includes: { hotel: true, cab: true, meals: true, sightseeing: true },
-  price: '8,500',
-  originalPrice: '11,000',
-  rating: 4.6,
-  reviews: 14,
-  description: 'An action-packed 2-day express itinerary designed to capture the core architectural wonders of Bhubaneswar, the divine spirituality of Puri, and the world-famous heritage of Konark.',
-  highlights: ['Comprehensive Bhubaneswar Temple Trail', 'Early Morning Shree Jagannath Temple Darshan', 'UNESCO Sun Temple at Konark & Chandrabhaga Beach', 'Nandankanan Zoological Park Excursion', 'Raghurajpur Heritage Artisan Village'],
-  inclusions: [
-    'Private AC transport vehicle for all land transfers and sightseeing routes',
-    '1 Night hotel accommodation in Puri on CP basis (with breakfast)',
-    'All standard road tolls, local parking tickets, and driver allowances'
-  ],
-  exclusions: [
-    'Airfare or train travel tickets to Bhubaneswar / from Puri',
-    'Admission tickets to Nandankanan Zoo, Konark Sun Temple, or other monuments',
-    'Lunches, dinners, and personal expenses such as laundry or tips',
-    'Specialized priest dakhina or guide service charges'
-  ],
-  dayPlan: [
-    { 
-      day: 1, 
-      title: 'Bhubaneswar Full Day Sightseeing & Puri Transfer', 
-      detail: 'After morning breakfast, visit local Bhubaneswar including Nandankanan Zoological Park (closed on Monday), 108 Shivling temple, Lingaraj Temple, Chausath (64) Yogini temple, Parshurameshwar Temple, Mukteshwar Temple, Rajarani Temple, and KedarGauri temple. Explore the oldest rock-cut caves before enjoying free time for shopping. Transfer to Puri for an overnight stay[cite: 1337].' 
-    },
-    { 
-      day: 2, 
-      title: 'Puri Darshan - Raghurajpur - Konark - Departure', 
-      detail: 'Begin with morning darshan at Shree Jagannath Temple (for Hindus only)[cite: 1338]. Next, visit the UNESCO World Heritage Craft Village of Raghurajpur, Ramachandi Temple, Chandrabhaga Beach, and the UNESCO World Heritage Sun Temple at Konark[cite: 1339]. Conclude your journey with a drop-off at the Puri Railway Station for your onward transit[cite: 1340].' 
-    }
   ]
 }
 ];

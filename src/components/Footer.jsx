@@ -20,6 +20,7 @@ const quickLinks = [
   { label: 'Tour Packages', href: '/packages' },
   { label: 'Our Hotels', href: '/hotels' },
   { label: 'Jagannath Darshan', href: '/jagannath-darshan' },
+  { label: 'Rath Yatra', href: '/rath-yatra' },
   { label: 'Tribal Tours', href: '/tribal-tours' },
   { label: 'Destinations', href: '/destinations' },
   { label: 'Cab Rentals', href: '/cab-rentals' },
@@ -46,12 +47,42 @@ const legalLinks = [
   { label: 'Refund Policy', href: '/refund-policy' },
 ];
 
+const whatsappMessage = encodeURIComponent(
+  `🙏 Namaste Odisha Indiatrip Pvt Ltd Team,
+
+I am interested in Odisha Tour Packages, Hotel Booking, Cab Services, and Customized Travel Planning.
+
+Please share the details and assist me with the best itinerary.
+
+Thank you!`
+);
+
 const socials = [
-  { icon: FaFacebookF, href: 'https://www.facebook.com/share/1DFcfx5ddP/', label: 'Facebook' },
-  { icon: FaInstagram, href: 'https://www.instagram.com/odishaindiatrip', label: 'Instagram' },
-  { icon: FaTwitter, href: 'https://x.com/Odishaindiatrip', label: 'Twitter' },
-  { icon: FaYoutube, href: 'https://www.youtube.com/@odishaindiatripofficial', label: 'YouTube' },
-  { icon: FaWhatsapp, href: 'https://wa.me/message/YVEM7OYHYJLIH1', label: 'WhatsApp' },
+  {
+    icon: FaFacebookF,
+    href: 'https://www.facebook.com/odishaindiatrip/',
+    label: 'Facebook',
+  },
+  {
+    icon: FaInstagram,
+    href: 'https://www.instagram.com/odishaindiatrip',
+    label: 'Instagram',
+  },
+  {
+    icon: FaTwitter,
+    href: 'https://x.com/Odishaindiatrip',
+    label: 'Twitter',
+  },
+  {
+    icon: FaYoutube,
+    href: 'https://www.youtube.com/@odishaindiatripofficial',
+    label: 'YouTube',
+  },
+  {
+    icon: FaWhatsapp,
+    href: `https://wa.me/919958826437?text=${whatsappMessage}`,
+    label: 'WhatsApp',
+  },
 ];
 
 const Footer = () => {
@@ -59,7 +90,7 @@ const Footer = () => {
     <footer className="bg-navy-950 text-white">
       <div className="container-max section-padding pb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
-          
+
           {/* About */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-5">
@@ -151,7 +182,7 @@ const Footer = () => {
 
                 <p className="text-white/50 text-sm leading-relaxed">
                   Plot No: 1094/1655, Lane-7, Aerodrome Area, District -Khurda Bhubaneswar 751020 Odisha.
-            
+
                 </p>
               </div>
 
@@ -165,7 +196,7 @@ const Footer = () => {
                   +91 99588 26437
                 </a>
               </div>
-              
+
 
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-amber-400 flex-shrink-0" />

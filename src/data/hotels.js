@@ -75,39 +75,39 @@ export const hotelCities = [
   {
     id: 'puri',
     name: 'Puri',
-    image:
-      Puri,
+    image: Puri,
+    description: 'Home to Jagannath Temple and famous golden beaches.'
   },
   {
     id: 'bhubaneswar',
     name: 'Bhubaneswar',
-    image:
-      Bhubaneswar,
+    image: Bhubaneswar,
+    description: 'Temple City of India with rich heritage and modern attractions.'
   },
   {
     id: 'konark',
     name: 'Konark',
-    image:
-      Konark,
+    image: Konark,
+    description: 'Famous for the UNESCO World Heritage Sun Temple.'
   },
   {
     id: 'bhitarkanika',
     name: 'Bhitarkanika',
-    image:
-      Bhitarkanika,
+    image: Bhitarkanika,
+    description: 'Mangrove forests, crocodiles and rich biodiversity.'
   },
   {
     id: 'daringbadi',
     name: 'Daringbadi',
-    image:
-      Daringbadi,
+    image: Daringbadi,
+    description: 'Known as the Kashmir of Odisha with scenic hill views.'
   },
   {
     id: 'gopalpur',
     name: 'Gopalpur',
-    image:
-      Gopalpur,
-  },
+    image: Gopalpur,
+    description: 'A peaceful beach destination with luxury seaside resorts.'
+  }
 ];
 
 export const hotels = [

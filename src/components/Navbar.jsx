@@ -10,7 +10,8 @@ const navLinks = [
   { label: 'Tour Packages', href: '/packages' },
   // { label: 'Jagannath Darshan', href: '/jagannath-darshan' },
   { label: 'Destinations', href: '/destinations' },
-  { label: 'Cab Rentals', href: '/cab-rentals' },
+  // { label: 'Cab Rentals', href: '/cab-rentals' },
+  { label: 'Rath Yatra', href: '/rath-yatra' },
   { label: 'Eco Tourism', href: '/eco-tourism' },
   { label: 'Blog', href: '/blog' },
 ];

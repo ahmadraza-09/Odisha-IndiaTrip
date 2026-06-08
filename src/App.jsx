@@ -44,6 +44,7 @@ import HotelDetailsPage from './pages/HotelDetailsPage';
 import FAQPage from './pages/FAQPage';
 import MapReviewSection from './components/MapReviewSection';
 import ContactPage from './pages/ContactPage';
+import RathYatraPage from './pages/RathYatraPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -138,6 +139,13 @@ const AppContent = () => {
         />
 
         <Route
+          path="/rath-yatra"
+          element={
+            <RathYatraPage onOpenInquiry={openInquiry} />
+          }
+        />
+
+        <Route
           path="/tribal-tours"
           element={
             <TribalPage onOpenInquiry={openInquiry} />
@@ -190,7 +198,7 @@ const AppContent = () => {
         />
 
         <Route
-          path="/hotels/:city"
+          path="/hotels/:cityId"
           element={<CityHotelsPage />}
         />
 
