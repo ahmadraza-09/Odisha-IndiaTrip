@@ -25,8 +25,8 @@ const SEO = ({
       name: "India",
     },
     sameAs: [
-      "https://facebook.com/yourpage",
-      "https://instagram.com/yourpage",
+      "https://facebook.com/odishaindiatrip",
+      "https://instagram.com/odishaindiatrip",
     ],
   }
 
@@ -49,11 +49,6 @@ const SEO = ({
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
 
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
 
       {/* Extra SEO */}
       <meta name="author" content="Odisha Indiatrip Pvt. Ltd." />
