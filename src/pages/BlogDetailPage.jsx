@@ -9,7 +9,7 @@ import SEO from '../components/SEO'
 
 import { blogPosts } from '../data/content';
 
-const BlogDetailPage = () => {
+const BlogDetailPage = ({ onOpenInquiry }) => {
   const { id } = useParams();
 
   const post = blogPosts.find((p) => p.id === id);
@@ -45,15 +45,15 @@ const BlogDetailPage = () => {
   const morePosts =
     relatedPosts.length < 3
       ? [
-          ...relatedPosts,
-          ...blogPosts
-            .filter(
-              (p) =>
-                p.id !== post.id &&
-                p.category !== post.category
-            )
-            .slice(0, 3 - relatedPosts.length),
-        ]
+        ...relatedPosts,
+        ...blogPosts
+          .filter(
+            (p) =>
+              p.id !== post.id &&
+              p.category !== post.category
+          )
+          .slice(0, 3 - relatedPosts.length),
+      ]
       : relatedPosts;
 
   return (
@@ -184,12 +184,13 @@ const BlogDetailPage = () => {
                     Odisha adventure.
                   </p>
 
-                  <Link
-                    to="/"
+                  <button
+                    name="Open Inquiry Form"
+                    onClick={onOpenInquiry}
                     className="btn-secondary text-sm w-full flex justify-center"
                   >
                     Get Free Quote
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>

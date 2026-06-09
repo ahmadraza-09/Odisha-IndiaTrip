@@ -166,7 +166,7 @@ const AppContent = () => {
 
         <Route
           path="/blog/:id"
-          element={<BlogDetailPage />}
+          element={<BlogDetailPage onOpenInquiry={openInquiry}/>}
         />
 
         <Route

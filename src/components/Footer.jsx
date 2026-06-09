@@ -181,7 +181,9 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" />
 
                 <p className="text-white/50 text-sm leading-relaxed">
-                  Plot No: 1094/1655, Lane-7, Aerodrome Area, District -Khurda Bhubaneswar 751020 Odisha.
+                  Plot No: 2078-3216, Jharapada, District -Khordha Bhubaneswar 751006 Odisha.
+
+                  
 
                 </p>
               </div>

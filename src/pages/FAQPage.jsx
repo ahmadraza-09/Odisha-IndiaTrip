@@ -7,10 +7,10 @@ const faqs = [
   {
     category: 'Booking & Payments',
     questions: [
-      { q: 'How do I book a tour?', a: 'You can book through our website by clicking "Book Now" on any package, or contact our team directly at +91 98765 43210 or info@odishatrails.com. A 30% advance is required to confirm your booking.' },
+      { q: 'How do I book a tour?', a: 'You can book through our website by clicking "Book Now" on any package, or contact our team directly at +91 99588 26437 or welcome@odishaindiatrip.com. A 30% advance is required to confirm your booking.' },
       { q: 'What payment methods do you accept?', a: 'We accept bank transfers (NEFT/RTGS/IMPS), UPI, credit/debit cards, and demand drafts. For bookings above ₹50,000, cash payments are not accepted per RBI guidelines.' },
       { q: 'Is travel insurance included?', a: 'Travel insurance is not included unless explicitly mentioned. We strongly recommend purchasing comprehensive travel insurance covering medical emergencies, trip cancellations, and baggage loss.' },
-      { q: 'Can I get a discount for group bookings?', a: 'Yes! We offer special discounts for groups of 10 or more. Contact our B2B team at partnerships@odishatrails.com for custom quotes.' },
+      { q: 'Can I get a discount for group bookings?', a: 'Yes! We offer special discounts for groups of 10 or more. Contact our B2B team at welcome@odishaindiatrip.com for custom quotes.' },
     ],
   },
   {
@@ -60,10 +60,10 @@ const faqs = [
   {
     category: 'General',
     questions: [
-      { q: 'Do you offer 24/7 support?', a: 'Yes! Our team is available 24/7 during your tour. Call +91 98765 43210 or email info@odishatrails.com anytime.' },
+      { q: 'Do you offer 24/7 support?', a: 'Yes! Our team is available 24/7 during your tour. Call +91 99588 26437 or email welcome@odishaindiatrip.com anytime.' },
       { q: 'Can I customize my itinerary?', a: 'Absolutely! All packages can be customized. Tell us your interests, duration, budget, and dates — we\'ll create a bespoke itinerary.' },
       { q: 'Do you offer corporate outings?', a: 'Yes! We specialize in corporate group tours with team-building activities, offsite venues, and customized itineraries.' },
-      { q: 'How do I request a quote?', a: 'Fill out the inquiry form, call +91 98765 43210, or email info@odishatrails.com with your travel dates, group size, and preferences. We\'ll send a quote within 24 hours.' },
+      { q: 'How do I request a quote?', a: 'Fill out the inquiry form, call +91 99588 26437, or email welcome@odishaindiatrip.com with your travel dates, group size, and preferences. We\'ll send a quote within 24 hours.' },
     ],
   },
 ];
@@ -93,7 +93,7 @@ const FAQPage = () => {
           </h1>
 
           <p className="text-white/60 text-sm mt-2">
-            Everything you need to know about traveling with Odisha Trails
+            Everything you need to know about traveling with Odisha Indiatrip Pvt. Ltd.
           </p>
         </div>
       </div>
