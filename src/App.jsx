@@ -45,6 +45,7 @@ import FAQPage from './pages/FAQPage';
 import MapReviewSection from './components/MapReviewSection';
 import ContactPage from './pages/ContactPage';
 import RathYatraPage from './pages/RathYatraPage';
+import OdishaMapPage from './pages/OdishaMapPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -212,6 +213,11 @@ const AppContent = () => {
         <Route
           path="/faq"
           element={<FAQPage />}
+        />
+
+        <Route
+          path="/odisha-tourist-map"
+          element={<OdishaMapPage />}
         />
 
         <Route

@@ -25,6 +25,7 @@ const quickLinks = [
   { label: 'Destinations', href: '/destinations' },
   { label: 'Cab Rentals', href: '/cab-rentals' },
   { label: 'Eco Tourism', href: '/eco-tourism' },
+  { label: 'Odisha Tourist Map', href: '/odisha-tourist-map' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
   { label: 'FAQ', href: '/faq' },
